@@ -43,21 +43,24 @@ const MobileNavbar = () => {
   useEffect(() => {
     const navElement = navElementRef.current;
 
-    if (showMobieNav) return;
-
-    if (navElement.classList.contains("invisible")) {
+    if (showMobieNav) {
       navElement.classList.remove("invisible");
       return;
     }
 
-    const timeoutId = setTimeout(() => {
-      navElement.classList.add("invisible");
-    }, 300);
+    if (!showMobieNav && !navElement.classList.contains("invisible")) {
+      const timeoutId = setTimeout(() => {
+        navElement.classList.add("invisible");
+        console.log("fired after 3 ms");
+      }, 300);
 
-    return () => {
-      clearTimeout(timeoutId);
+      return () => {
+        clearTimeout(timeoutId);
+        navElement.classList.remove("invisible");
+      };
+    } else {
       navElement.classList.remove("invisible");
-    };
+    }
   }, [showMobieNav]);
 
   return (
