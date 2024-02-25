@@ -5,7 +5,7 @@ import MobileNavbar from "./MobileNavbar";
 const Navbar = () => {
   return (
     <header className="nav-container">
-      <nav className="flex items-center justify-between">
+      <div className="flex items-center justify-between">
         {/* logo */}
         <Link href="/">
           <Image
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="block lg:hidden">
           <MobileNavbar />
         </div>
-      </nav>
+      </div>
     </header>
   );
 };
