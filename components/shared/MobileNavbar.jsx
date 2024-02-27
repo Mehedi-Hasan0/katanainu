@@ -17,7 +17,7 @@ const MobileNavbar = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <IoMenu size={30} color="#000" />
+          <IoMenu size={32} color="#fff" />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader>
