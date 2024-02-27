@@ -23,7 +23,12 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center text-sm text-primary-color font-semibold uppercase xl:flex-1 2xl:flex-initial xl:ml-5">
           {navlinks.textLinks.map((link, i) => (
             <li key={i} className="py-5 px-4 2xl:px-8">
-              <Link href={link.path} className="text-base 2xl:text-lg">
+              <Link
+                href={link.path}
+                className={`text-base 2xl:text-lg relative hover:text-[#f5a238] transition-all duration-300 ease-in-out ${
+                  i !== 0 && "nav-links"
+                }`}
+              >
                 {link.label}
               </Link>
             </li>

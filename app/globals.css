@@ -29,6 +29,23 @@ body {
   color: white;
 }
 
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -12px;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: width 300ms ease-in-out;
+}
+
+.nav-links:hover::after {
+  width: 55%;
+  background-color: #f5a238;
+  transition: width 300ms ease-in-out;
+}
+
 @media (min-width: 1800px) {
   .max-screen-width {
     width: 1640px;
