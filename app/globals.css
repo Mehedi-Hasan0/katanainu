@@ -3,7 +3,53 @@
 @tailwind utilities;
 
 body {
-  background-color: blueviolet;
+  background-color: #0b0b0b;
+}
+
+.animated-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f5a238;
+  z-index: -1;
+
+  transition: transform 400ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.animated-btn:hover::before,
+.animated-btn:focus::before {
+  transform: scaleX(1);
+  border-radius: 9999px;
+}
+
+.animated-btn:hover,
+.animated-btn:focus {
+  color: white;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -12px;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: width 300ms ease-in-out;
+}
+
+.nav-links:hover::after {
+  width: 55%;
+  background-color: #f5a238;
+  transition: width 300ms ease-in-out;
+}
+
+@media (min-width: 1800px) {
+  .max-screen-width {
+    width: 1640px;
+  }
 }
 
 @layer base {
@@ -72,10 +118,13 @@ body {
 
 @layer {
   /* NAV CSS */
-  .nav-container {
-    @apply max-w-full sm:max-w-xl md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1200px] 2xl:max-w-screen-2xl mx-auto px-4 sm:px-0 py-3 2xl:px-10;
+  .main-container {
+    @apply w-full sm:w-[576px] md:w-[720px] lg:w-[960px] xl:w-[1200px] 2xl:w-[1370px] mx-auto px-4 sm:px-0 py-3 2xl:px-20;
   }
   .navLogo {
     @apply flex justify-between items-start px-6 py-7;
+  }
+  .text-primary-color {
+    @apply text-white;
   }
 }
