@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Bannner = () => {
   return (
-    <section>
+    <section className="banner-section ">
       <video
         src="https://res.cloudinary.com/dlhexsnxq/video/upload/v1709041993/bg-video_lq0fuk.mp4"
         autoPlay
@@ -31,7 +31,7 @@ const Bannner = () => {
             className="lg:w-[741px] lg:h-[88px]"
           />
         </h1>
-        <h2 className="text-lg lg:text-[28px] uppercase text-white font-medium">
+        <h2 className="text-lg lg:text-[28px] uppercase text-white font-medium font-poppins">
           Multiplayer on-chain action game
         </h2>
 
