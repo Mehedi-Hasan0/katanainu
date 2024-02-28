@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ArrowIcon = () => {
-  const initialScreenSize =
-    typeof window !== "undefined" ? window.innerWidth : 0;
+  const initialScreenSize = typeof window !== "undefined" && window.innerWidth;
   const [screenSize, setScreenSize] = useState(initialScreenSize);
 
   useEffect(() => {
@@ -13,6 +12,8 @@ const ArrowIcon = () => {
       setScreenSize(window.innerWidth);
     }
   }, [screenSize]);
+
+  console.log(screenSize, "screen");
 
   return (
     <>

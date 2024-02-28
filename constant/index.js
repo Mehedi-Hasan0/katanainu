@@ -94,3 +94,18 @@ export const navlinks = {
     },
   ],
 };
+
+export const brandLinks = [
+  {
+    imgPath: "/assets/icons/brand1.svg",
+    linkPath: "https://skynet.certik.com/projects/katanainu",
+  },
+  {
+    imgPath: "/assets/images/brand2.png",
+    linkPath: "#",
+  },
+  {
+    imgPath: "/assets/images/brand3.png",
+    linkPath: "#",
+  },
+];
