@@ -17,6 +17,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: "var(--font-poppins), sans-sarif",
+        grind: "var(--font-grind)",
+        jost: "var(--font-jost)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

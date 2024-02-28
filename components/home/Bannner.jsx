@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Bannner = () => {
   return (
-    <section>
+    <section className="banner-section ">
       <video
         src="https://res.cloudinary.com/dlhexsnxq/video/upload/v1709041993/bg-video_lq0fuk.mp4"
         autoPlay
@@ -13,8 +13,8 @@ const Bannner = () => {
         loop
         poster="/assets/images/thumbnail2.png"
         width={"100%"}
-        height={"100vh"}
-        className="w-full h-screen object-cover absolute top-0 left-0"
+        height={"100%"}
+        className="w-full h-svh md:h-screen object-cover"
       />
       {/* overlay/backdrop/shadow */}
       <div className=" bg-gradient-to-b from-black/10 to-black/20 absolute w-full h-full z-10 top-0 left-0" />
@@ -27,11 +27,11 @@ const Bannner = () => {
             alt=""
             width={"496"}
             height={"59"}
-            priority="true"
+            priority={true}
             className="lg:w-[741px] lg:h-[88px]"
           />
         </h1>
-        <h2 className="text-lg lg:text-[28px] uppercase text-white font-medium">
+        <h2 className="text-lg lg:text-[28px] uppercase text-white font-medium font-poppins">
           Multiplayer on-chain action game
         </h2>
 

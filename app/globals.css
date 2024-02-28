@@ -4,6 +4,13 @@
 
 body {
   background-color: #0b0b0b;
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-grind);
 }
 
 .animated-btn::before {
@@ -46,9 +53,22 @@ body {
   transition: width 300ms ease-in-out;
 }
 
+.brand_container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -209px;
+  width: 100%;
+  background-image: url("/assets/images/bg_pattern.png");
+  height: 1143px;
+  z-index: -1;
+  pointer-events: none;
+}
+
 @media (min-width: 1800px) {
   .max-screen-width {
     width: 1640px;
+    padding-inline: 0;
   }
 }
 
@@ -126,5 +146,10 @@ body {
   }
   .text-primary-color {
     @apply text-white;
+  }
+
+  /* SECTIONS */
+  .section-padding {
+    @apply mt-10 sm:mt-14 md:mt-20 xl:mt-32;
   }
 }
