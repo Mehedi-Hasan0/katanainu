@@ -9,8 +9,9 @@ const Brand = () => {
   return (
     <div className="text-white main-container">
       <div className="flex items-center justify-center gap-5 sm:gap-8 xl:gap-10 py-6 ">
-        {brandLinks.map((brand) => (
+        {brandLinks.map((brand, i) => (
           <Link
+            key={i}
             href={brand.linkPath}
             target={brand.linkPath.length !== 1 ? "_blank" : "_parent"}
           >
