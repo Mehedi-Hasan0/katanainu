@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Blogs = () => {
   return (
-    <section className="section-margin relative brand_container">
+    <section className="section-padding relative mb-32 xl:mb-44">
       <div className="main-container text-white flex flex-col gap-16 lg:gap-24">
         {/* heading */}
         <div className="flex flex-col gap-3 md:gap-5 justify-center items-center">
