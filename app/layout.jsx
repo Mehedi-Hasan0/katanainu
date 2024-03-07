@@ -1,4 +1,4 @@
-import { Poppins, Jost } from "next/font/google";
+import { Poppins, Jost, Oswald } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
@@ -7,6 +7,11 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-poppins",
+});
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-oswald",
 });
 
 const grind = localFont({
@@ -29,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${grind.variable} ${jost.variable}`}
+        className={`${poppins.variable} ${grind.variable} ${jost.variable} ${oswald.variable}`}
       >
         <Navbar />
         {children}

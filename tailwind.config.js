@@ -21,6 +21,7 @@ module.exports = {
         poppins: "var(--font-poppins), sans-sarif",
         grind: "var(--font-grind)",
         jost: "var(--font-jost)",
+        oswald: "var(--font-oswald)",
       },
       colors: {
         border: "hsl(var(--border))",
