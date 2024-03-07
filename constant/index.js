@@ -109,3 +109,22 @@ export const brandLinks = [
     linkPath: "#",
   },
 ];
+
+export const sliderImg = [
+  {
+    imgUrl: "/assets/images/slider-img-1.webp",
+    youtubeUrl: "7nykO0FzsVQ",
+  },
+  {
+    imgUrl: "/assets/images/slider-img-2.webp",
+    youtubeUrl: "E694jJeE_EE",
+  },
+  {
+    imgUrl: "/assets/images/slider-img-3.webp",
+    youtubeUrl: "9c7pDf-WFAk",
+  },
+  {
+    imgUrl: "/assets/images/slider-img-4.webp",
+    youtubeUrl: "TKKWnzLZMKo",
+  },
+];

@@ -2,6 +2,7 @@ import Bannner from "@/components/home/Bannner";
 import Blogs from "@/components/home/Blogs";
 import Brand from "@/components/home/Brand";
 import Newsletter from "@/components/home/Newsletter";
+import Trailers from "@/components/home/Trailers";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Brand />
         <Newsletter />
         <Blogs />
+        <Trailers />
       </div>
     </main>
   );
