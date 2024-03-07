@@ -33,3 +33,50 @@ export const blogsStaticData = [
       "We've got some news to share about our latest collaboration that's sure to get you pumped. We've teamed up with BabyDoge to bring you the ultimate BabyDoge x Katana Inu NFT Collection. This partnership is about delivering thrilling experiences",
   },
 ];
+
+export const requiremnts = {
+  minimum: [
+    {
+      label: "OS Version",
+      slug: "Windows 10 64-bit",
+    },
+    {
+      label: "Processor",
+      slug: "Intel i5 4th generation or AMD FX 6300",
+    },
+    {
+      label: "Memory",
+      slug: "8GB",
+    },
+    {
+      label: "Graphics",
+      slug: "NVIDIA GeForce GTX 750TI or equivalent",
+    },
+    {
+      label: "Disk Space",
+      slug: "30 GB",
+    },
+  ],
+  recomended: [
+    {
+      label: "OS Version",
+      slug: "Windows 10 64-bit",
+    },
+    {
+      label: "Processor",
+      slug: "Intel i7 7th generation or equivalent",
+    },
+    {
+      label: "Memory",
+      slug: "8GB",
+    },
+    {
+      label: "Graphics",
+      slug: "NVIDIA GeForce GTX 1060 or equivalent",
+    },
+    {
+      label: "Disk Space",
+      slug: "30 GB",
+    },
+  ],
+};
