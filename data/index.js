@@ -80,3 +80,49 @@ export const requiremnts = {
     },
   ],
 };
+
+export const gameDownloadOptions = [
+  {
+    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/katana-inu%20Setup%203.0.8.exe",
+    imgPath: "/assets/images/download_btn.png",
+  },
+  {
+    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/katana-inu%20Setup%203.0.8.exe",
+    imgPath: "/assets/images/play_with_launcher.png",
+  },
+  {
+    url: "https://storage.googleapis.com/euphoric-anchor-397613.appspot.com/katana-inu%20Setup%203.0.8.exe",
+    label: "Download directly",
+  },
+];
+
+export const gameTags = [
+  {
+    tags: "Immortal",
+    type: "1x",
+  },
+  {
+    tags: "Legendary",
+    type: "1x",
+  },
+  {
+    tags: "Common",
+    type: "1x",
+  },
+  {
+    tags: "Mystical",
+    type: "1x",
+  },
+  {
+    tags: "Rare",
+    type: "1x",
+  },
+  {
+    tags: "Forge",
+    type: "1x",
+  },
+  {
+    tags: "Crusader",
+    type: "1x",
+  },
+];

@@ -2,6 +2,7 @@ import Bannner from "@/components/home/Bannner";
 import Blogs from "@/components/home/Blogs";
 import Brand from "@/components/home/Brand";
 import Newsletter from "@/components/home/Newsletter";
+import PlayClosedBeta from "@/components/home/PlayClosedBeta";
 import Requirements from "@/components/home/Requirements";
 import Trailers from "@/components/home/Trailers";
 
@@ -15,6 +16,7 @@ export default function Home() {
         <Blogs />
         <Trailers />
         <Requirements />
+        <PlayClosedBeta />
       </div>
     </main>
   );
