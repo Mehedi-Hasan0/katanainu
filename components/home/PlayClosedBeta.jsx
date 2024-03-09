@@ -187,7 +187,7 @@ const PlayClosedBeta = () => {
                   <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[25%]">
                     Hold one of the below combinations for the{" "}
                     <span className="text-[#f9c306]">
-                      GameZone Sword or Bluezilla Axe NFT's:
+                      GameZone Sword or Bluezilla Axe NFT&aposs:
                     </span>
                   </h3>
                 </Link>
