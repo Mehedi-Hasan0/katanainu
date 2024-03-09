@@ -126,3 +126,22 @@ export const gameTags = [
     type: "1x",
   },
 ];
+
+export const chooseHero = [
+  {
+    heroImgUrl: "/assets/images/hero1.svg",
+    heroName: "Kape",
+  },
+  {
+    heroImgUrl: "/assets/images/hero2.webp",
+    heroName: "Blockchain",
+  },
+  {
+    heroImgUrl: "/assets/images/hero3.webp",
+    heroName: "Bear",
+  },
+  {
+    heroImgUrl: "/assets/images/hero4.webp",
+    heroName: "KatanaInu",
+  },
+];
