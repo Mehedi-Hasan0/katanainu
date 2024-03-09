@@ -229,7 +229,7 @@ const PlayClosedBeta = () => {
                   poster="/assets/images/thumbnail2.png"
                   width={"100%"}
                   height={"100%"}
-                  className="absolute top-0 left-0 w-full h-full p-0 object-cover"
+                  className="absolute top-0 left-0 w-full h-[65%] sm:h-full p-0 object-cover"
                 />
               </div>
             </div>
