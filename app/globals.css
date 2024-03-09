@@ -13,6 +13,79 @@ h3 {
   font-family: var(--font-grind);
 }
 
+.access-key-options-1,
+.access-key-options-2,
+.access-key-options-3 {
+  font-family: var(--font-jost);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 118.5%;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #191d23;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  margin: 6px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.access-key-options-1::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 60px;
+  margin-top: 1px;
+  margin-left: 10px;
+  background: url(/assets/images/coins.png);
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.access-key-options-2::after {
+  content: "";
+  position: absolute;
+  width: 42%;
+  height: 90px;
+  margin-top: 22px;
+  margin-left: 0px;
+  background: url(/assets/images/nfts.png);
+  background-repeat: no-repeat;
+  right: 4px;
+}
+
+.access-key-options-3::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 80px;
+  margin-top: 22px;
+  margin-left: 0px;
+  background: url(/assets/images/Ap.png);
+  background-repeat: no-repeat;
+  right: 4px;
+}
+
+.access-key-video-container img {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+  width: 82%;
+  margin-left: 0%;
+}
+
+.access-key-video-container::before {
+  content: "";
+  position: absolute;
+  left: -125px;
+  top: -25%;
+  background-image: url(/assets/images/download_shape.png);
+  width: 360px;
+  height: 861px;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .animated-btn::before {
   content: "";
   position: absolute;
@@ -81,6 +154,9 @@ h3 {
     width: 1640px;
     padding-inline: 0;
   }
+  .access-key-video-container::before {
+    width: 700px;
+  }
 }
 @media (max-width: 1280px) {
   .gallery-image::before {
@@ -88,10 +164,19 @@ h3 {
     height: 900px;
   }
 }
+@media (min-width: 1280px) {
+  .access-key-options-2::after {
+    width: 36%;
+  }
+}
+
 @media (min-width: 1024px) {
   .gallery-image::before {
     bottom: 7%;
     height: 500px;
+  }
+  .access-key-video-container::before {
+    width: 500px;
   }
 }
 @media (min-width: 768px) {
@@ -200,7 +285,7 @@ h3 {
 @layer {
   /* NAV CSS */
   .main-container {
-    @apply w-full sm:w-[576px] md:w-[720px] lg:w-[960px] xl:w-[1200px] 2xl:w-[1370px] mx-auto px-4 sm:px-0 py-3 2xl:px-20;
+    @apply w-full sm:w-[576px] md:w-[740px] lg:w-[960px] xl:w-[1200px] 2xl:w-[1370px] mx-auto px-4 sm:px-0 py-3 2xl:px-20;
   }
   .navLogo {
     @apply flex justify-between items-start px-6 py-7;
