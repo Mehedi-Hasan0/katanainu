@@ -210,3 +210,34 @@ export const kataTokenStorePartner = [
     imgUrl: "/assets/images/logo/bitgert.png",
   },
 ];
+
+export const celebritiesData = [
+  {
+    name: "Pnbrock",
+    profileImg: "/assets/images/team_member01.png",
+    twitter: "https://twitter.com/PnBRock",
+    youtube: "https://www.youtube.com/channel/UC52OnlZcHd_ajoTiqcskrvg",
+    instagram: "https://www.instagram.com/pnbrock/",
+  },
+  {
+    name: "The game",
+    profileImg: "/assets/images/team_member02.png",
+    twitter: "https://twitter.com/thegame/status/1495507283861778435",
+    youtube: "https://www.youtube.com/channel/UC3eKKASjWY-WAGRII9iKHsQ",
+    instagram: "https://www.instagram.com/losangelesconfidential/",
+  },
+  {
+    name: "Tpain",
+    profileImg: "/assets/images/team_member03.png",
+    twitter: "https://twitter.com/TPAIN/status/1503890570305052677",
+    youtube: "https://www.youtube.com/channel/UCwff7OoSHp3el6GqnSwcSdA",
+    instagram: "https://www.instagram.com/tpain/",
+  },
+  {
+    name: "Desiigner",
+    profileImg: "/assets/images/team_member04.png",
+    twitter: "https://twitter.com/LifeOfDesiigner/status/1493998851186851841",
+    youtube: "https://www.youtube.com/channel/UCAfvFXvjzEupwo2NtyDhRZA",
+    instagram: "https://www.instagram.com/lifeofdesiigner/",
+  },
+];
