@@ -1,4 +1,5 @@
 import Backers from "./Backers";
+import GamePartner from "./GamePartner";
 import Promoters from "./Promoters";
 
 const Partner = () => {
@@ -6,6 +7,7 @@ const Partner = () => {
     <section className="main-container section-margin">
       <Promoters />
       <Backers />
+      <GamePartner />
     </section>
   );
 };
