@@ -3,8 +3,8 @@ import Blogs from "@/components/home/Blogs";
 import Brand from "@/components/home/Brand";
 import ChoosePlayer from "@/components/home/ChoosePlayer";
 import Newsletter from "@/components/home/Newsletter";
+import Partner from "@/components/home/Partner";
 import PlayClosedBeta from "@/components/home/PlayClosedBeta";
-import Promoters from "@/components/home/Promoters";
 import Requirements from "@/components/home/Requirements";
 import TokenOverview from "@/components/home/TokenOverview";
 import Trailers from "@/components/home/Trailers";
@@ -24,7 +24,7 @@ export default function Home() {
         <ChoosePlayer />
         <TokenOverview />
         <WhereToBuyToken />
-        <Promoters />
+        <Partner />
       </div>
     </main>
   );

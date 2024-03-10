@@ -241,3 +241,36 @@ export const celebritiesData = [
     instagram: "https://www.instagram.com/lifeofdesiigner/",
   },
 ];
+
+export const backers = [
+  {
+    imgUrl: "/assets/images/partner-1.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-2.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-3.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-4.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-5.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-6.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-7.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-8.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-9.png",
+  },
+  {
+    imgUrl: "/assets/images/partner-10.png",
+  },
+];
