@@ -128,3 +128,56 @@ export const sliderImg = [
     youtubeUrl: "TKKWnzLZMKo",
   },
 ];
+
+export const footerLinks = {
+  game: [
+    {
+      label: "Overview",
+      link: "https://play.katanainu.com/",
+    },
+    {
+      label: "Whitepaper",
+      link: "/assets/resources/katanainuwhitepaper.pdf",
+    },
+    {
+      label: "Tokenomics",
+      link: "/assets/resources/katanainutokenomics.pdf",
+    },
+    {
+      label: "Unstake",
+      link: "https://unstake.katanainu.com/",
+    },
+    {
+      label: "FAQ",
+      link: "/faq",
+    },
+  ],
+  contact: [
+    {
+      label: "Conatct Us",
+      link: "mailto:support@katanainu.com",
+    },
+    {
+      label: "Apply as Ambassador",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScVXnhpPN1tmdKAczdvd5YDwCo_14oF3VdAp84BK7c9KEKD4Q/viewform",
+    },
+    {
+      label: "Apply as Influencer",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScVXnhpPN1tmdKAczdvd5YDwCo_14oF3VdAp84BK7c9KEKD4Q/viewform",
+    },
+  ],
+  legal: [
+    {
+      label: "Privacy Policy",
+      link: "/assets/resources/Katanainuprivacy.pdf",
+    },
+    {
+      label: "Terms Of Service",
+      link: "/assets/resources/termsofservicekatanainu.docx",
+    },
+    {
+      label: "Cookies Policy",
+      link: "/assets/resources/cookiespolicy.pdf",
+    },
+  ],
+};
