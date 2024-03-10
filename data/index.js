@@ -145,3 +145,30 @@ export const chooseHero = [
     heroName: "KatanaInu",
   },
 ];
+
+export const coinkataData = [
+  {
+    imgUrl: "/assets/images/coin-icon-1.png",
+    label: "NFTs",
+    desc: "NFTs are an essential part of the KATANA INU ecosystem. People can buy and sell NFTs using $KATA tokens.",
+    style: "w-20 h-16",
+  },
+  {
+    imgUrl: "/assets/images/coin-icon-2.png",
+    label: "Staking System",
+    desc: "We paused staking system in early 2023. If you already staked your tokens, please head to staking.katanainu.com to unstake them",
+    style: "w-14 h-11",
+  },
+  {
+    imgUrl: "/assets/images/coin-icon-3.png",
+    label: "Tournaments",
+    desc: "We will organize tournaments for all $KATA holders to enjoy and win even more token by winning!",
+    style: "w-20 h-16",
+  },
+  {
+    imgUrl: "/assets/images/coin-icon-4.png",
+    label: "NFT Marketplace",
+    desc: "Own $KATA and get discounts on trading fees.",
+    style: "w-[158px] h-[109px]",
+  },
+];
