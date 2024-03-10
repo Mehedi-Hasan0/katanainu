@@ -13,28 +13,6 @@ import Image from "next/image";
 
 SwiperCore.use([Navigation]);
 
-const swiperOptions = {
-  navigation: {
-    prevEl: ".chooseHero-prev",
-    nextEl: ".chooseHero-next",
-  },
-  spaceBetween: 20,
-  breakpoints: {
-    0: {
-      slidesPerGroup: 1,
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerGroup: 2,
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerGroup: 3,
-      slidesPerView: 3,
-    },
-  },
-};
-
 const ChoosePlayer = () => {
   const [swiperLoaded, setSwiperLoaded] = useState(false);
 
@@ -51,7 +29,7 @@ const ChoosePlayer = () => {
 
   return (
     <>
-      <section className=" section-margin mb-20">
+      <section className=" section-margin">
         <div className="flex flex-col gap-2 sm:gap-3 justify-center items-center">
           <h5 className="uppercase text-gradient tracking-[2px] text-xl sm:text-2xl md:text-3xl font-jost font-bold">
             Ready to play?
