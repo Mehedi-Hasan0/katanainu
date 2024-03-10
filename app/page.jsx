@@ -7,6 +7,7 @@ import PlayClosedBeta from "@/components/home/PlayClosedBeta";
 import Requirements from "@/components/home/Requirements";
 import TokenOverview from "@/components/home/TokenOverview";
 import Trailers from "@/components/home/Trailers";
+import WhereToBuyToken from "@/components/home/WhereToBuyToken";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <PlayClosedBeta />
         <ChoosePlayer />
         <TokenOverview />
+        <WhereToBuyToken />
       </div>
     </main>
   );
