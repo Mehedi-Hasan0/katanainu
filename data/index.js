@@ -172,3 +172,41 @@ export const coinkataData = [
     style: "w-[158px] h-[109px]",
   },
 ];
+
+export const kataTokenStorePartner = [
+  {
+    storeName: "Bitmart",
+    link: "https://www.bitmart.com/trade/en?symbol=KATA_USDT&layout=basic",
+    imgUrl: "/assets/images/logo/bit.png",
+  },
+  {
+    storeName: "Mexcglobal",
+    link: "https://www.mexc.com/de-DE/exchange/KATA_USDT",
+    imgUrl: "/assets/images/logo/mex.png",
+  },
+  {
+    storeName: "Digifinex",
+    link: "https://www.digifinex.com/en-ww/trade/USDT/KATA",
+    imgUrl: "/assets/images/logo/digi.png",
+  },
+  {
+    storeName: "Probit",
+    link: "https://www.probit.com/app/exchange/KATA-USDT",
+    imgUrl: "/assets/images/logo/pro.png",
+  },
+  {
+    storeName: "Latoken",
+    link: "https://latoken.com/exchange/KATA_USDT",
+    imgUrl: "/assets/images/logo/latoken.png",
+  },
+  {
+    storeName: "Coinstore",
+    link: "https://www.coinstore.com/#/spot/KATAUSDT",
+    imgUrl: "/assets/images/logo/coinstore.png",
+  },
+  {
+    storeName: "Bitgert",
+    link: "https://www.probit.com/app/exchange/KATA-USDT",
+    imgUrl: "/assets/images/logo/bitgert.png",
+  },
+];

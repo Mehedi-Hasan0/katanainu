@@ -25,7 +25,7 @@ const TokenOverview = () => {
         </span>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-3">
+      <div className="flex flex-col md:flex-row gap-3 relative">
         <div className="lg:w-1/4 2xl:w-1/3 px-3 hidden md:block absolute right-0 bottom-0 lg:static">
           <Image
             src={"/assets/images/coinkata.webp"}

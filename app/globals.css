@@ -189,11 +189,11 @@ h3 {
     content: "";
     position: absolute;
     background-image: url(/assets/images/coin_shape.webp);
-    width: 32%;
+    width: 35%;
     height: 353px;
     pointer-events: none;
     margin-top: -250px;
-    right: 200px;
+    right: 100px;
     background-repeat: no-repeat;
   }
 }
