@@ -9,7 +9,7 @@ import { FaInstagram, FaLink, FaTwitter, FaYoutube } from "react-icons/fa6";
 const Promoters = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   return (
-    <section className="main-container section-margin">
+    <>
       <div className="flex flex-col justify-center items-center gap-2 mb-7 sm:mb-10 md:mb-12">
         <h5 className="uppercase text-gradient font-bold text-xl sm:text-2xl md:text-3xl font-jost text-center">
           Influencer celebrities
@@ -25,7 +25,7 @@ const Promoters = () => {
           {celebritiesData.map((celeb, i) => (
             <div
               key={i}
-              className="flex flex-col justify-center items-center px-4 mb-10"
+              className="flex flex-col justify-center items-center px-4 mb-12"
             >
               <Link
                 href={celeb.twitter}
@@ -70,7 +70,7 @@ const Promoters = () => {
           ))}
         </div>
       </div>
-    </section>
+    </>
   );
 };
 

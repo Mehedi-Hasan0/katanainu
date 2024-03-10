@@ -73,7 +73,7 @@ const WhereToBuyToken = () => {
       </div>
 
       <div className="overflow-hidden">
-        <ul className="flex flex-row flex-wrap items-center justify-center md:flex-nowrap">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 items-center">
           {kataTokenStorePartner.map((store, i) => (
             <li key={i} className="mx-4 my-2">
               <Link href={store.link}>
