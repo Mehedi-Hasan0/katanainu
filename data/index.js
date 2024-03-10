@@ -274,3 +274,36 @@ export const backers = [
     imgUrl: "/assets/images/partner-10.png",
   },
 ];
+
+export const gamePartnerLogo = [
+  {
+    imgUrl: "/assets/images/gp-1.svg",
+  },
+  {
+    imgUrl: "/assets/images/gp-2.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-3.svg",
+  },
+  {
+    imgUrl: "/assets/images/gp-4.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-5.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-6.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-7.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-8.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-9.png",
+  },
+  {
+    imgUrl: "/assets/images/gp-10.png",
+  },
+];
