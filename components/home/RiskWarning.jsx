@@ -30,7 +30,7 @@ const RiskWarning = () => {
         </span>
       </p>
       <p className="text-[#d3d3d3] text-xs sm:text-sm md:text-base text-center max-w-[940px]">
-        If you have any questions please don't hesitate to contact us:
+        If you have any questions please don&apos;t hesitate to contact us:
         support@katanainu.com
       </p>
 
