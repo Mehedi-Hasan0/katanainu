@@ -106,6 +106,10 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <div className="section-margin py-6 sm:py-8 md:py-10lg:py-12 text-sm font-medium text-white text-center font-jost">
+        All rights reserved by{" "}
+        <span className="text-[#f3a511]">Chainvision Games</span>
+      </div>
     </footer>
   );
 };
