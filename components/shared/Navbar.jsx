@@ -5,6 +5,7 @@ import Link from "next/link";
 import MobileNavbar from "./MobileNavbar";
 import { navlinks } from "@/constant";
 import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -12,6 +13,9 @@ const Navbar = () => {
   const [isFirstLinkHovered, setIsFirstLinkHovered] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(-1);
   const subMenuRef = useRef(null);
+
+  const searchParam = useSearchParams();
+  console.log(searchParam, "search");
 
   const handleFirstLinkHover = () => {
     setIsFirstLinkHovered(true);

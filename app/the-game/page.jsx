@@ -37,9 +37,9 @@ export default function About() {
                   Game Modes
                 </h3>
                 <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
-                  Katana Inu's primary game mode will be Battle-Royale, with a
-                  maximum of 60 players. In this mode, players can choose to
-                  squad up or go solo against a team of other players in an
+                  Katana Inu&apos;s primary game mode will be Battle-Royale,
+                  with a maximum of 60 players. In this mode, players can choose
+                  to squad up or go solo against a team of other players in an
                   interactive open-world map. Katana Inu will also feature
                   different game modes in smaller map arenas, like 1v1 and 3v3.
                   While the Battle-Royale mode launched in Q3 2023, the
