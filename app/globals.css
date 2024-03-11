@@ -398,6 +398,11 @@ h3 {
   transition: all 0.3s ease-in;
 }
 
+.rarity-table:hover .rarity-table_item-1 {
+  color: #fff;
+  background-color: #ffa500;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: white;
