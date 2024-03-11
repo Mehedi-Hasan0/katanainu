@@ -1,7 +1,7 @@
+import { Button } from "@/components/ui/button";
 import { backers } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 const Backers = () => {
   return (

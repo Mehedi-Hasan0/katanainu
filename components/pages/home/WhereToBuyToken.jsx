@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { FaCopy } from "react-icons/fa6";
 import { useState } from "react";
 import { kataTokenStorePartner } from "@/data";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const tokenStore = [
   {
