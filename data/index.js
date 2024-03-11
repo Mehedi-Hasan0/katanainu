@@ -307,3 +307,82 @@ export const gamePartnerLogo = [
     imgUrl: "/assets/images/gp-10.png",
   },
 ];
+
+export const teamMembers = [
+  {
+    profileImg: "/assets/images/team_01.webp",
+    title: "ceo & founder",
+    name: "Marwan h",
+    about:
+      "Marwan Haddad is a serial entrepreneur and businessman since 2009 in the digital world, ecommerce, marketing, publisher and since end of 2016 in the crypto space as an investor. Since 2004 experience in graphic design and gaming. Working in Katana Inu as Art and Creative Director and leading the project.",
+    twitter: "https://twitter.com/marwankatanainu",
+    linkedin: "https://www.linkedin.com/in/marwan1412/",
+    instagram: "https://www.instagram.com/marwankatanainu/",
+  },
+  {
+    profileImg: "/assets/images/team_02.webp",
+    title: "coo",
+    name: "Hamza s.",
+    about:
+      "Hamza Shamsi successful businessman with experience in import/export, real estate, and technology. Since 2021. I've been the COO of Katana Inu, a leading blockchain platform. My journey began as a trader, and I'm now passionate about combining my business acumen with my love for technology.",
+    twitter: "https://twitter.com/hamzashamsi3",
+    linkedin:
+      "https://www.linkedin.com/in/hamzashamsi/?trk=public_profile_browsemap&originalSubdomain=pk",
+  },
+  {
+    profileImg: "/assets/images/team_03.webp",
+    title: "marketing manager",
+    name: "yezdan n.",
+    about:
+      "Yezdan Nas is an entrepreneur and businessman with +10 years experience as a managing director in the industry. +2 years experience as a Key Account Manager at one of the largest personnel service providers in the field of engineering for the automotive industry. Entered the crypto space in 2020.",
+    twitter: "https://twitter.com/yezdan2117?s=11&t=tq8zUbCArnw5pSqCTGBn3g",
+    linkedin: "https://www.linkedin.com/in/yezdan-nas-25b637221/",
+  },
+];
+
+export const advisors = [
+  {
+    profileImg: "/assets/images/ad-1.webp",
+    title: "Valuable Advisor",
+    name: "Ryan horn",
+    about: "Founder of N3ON. Ex-Binance NFT director and Web3 visionary.",
+    linkedin: "https://www.linkedin.com/in/hornryan/",
+  },
+  {
+    profileImg: "/assets/images/ad-2.webp",
+    title: "Blockchain expert",
+    name: "WULF KAAL",
+    about:
+      "Co-Founder of DEVxDAO, CRDAO. Professor, NFT and DAO Expert. Digital Assets.",
+    linkedin: "https://www.linkedin.com/in/wulf-kaal-6904a65b/",
+  },
+  {
+    profileImg: "/assets/images/ad-3.webp",
+    title: "BLOCKCHAIN STRATEGIST",
+    name: "JEFFREY VAN EEDEN",
+    about:
+      "CEO of Gamezone.io and 9 years of experience within the crypto space.",
+    linkedin: "#",
+  },
+  {
+    profileImg: "/assets/images/ad-4.webp",
+    title: "CRYPTO ADVISOR",
+    name: "KYLE CHASSE",
+    about:
+      "Founder of Master Venture, One of the Top 50 influential people in the crypto",
+    more: " space with over 10 years experience in blockchain and successfully advised several Binance-listed projects.An early investor in Kraken, Coinbase, Bitfinex and other big Exchanges.",
+    youtube: "https://www.youtube.com/channel/UCYLxoSziVePq9rpptc8lEwA",
+    linkedin: "https://www.linkedin.com/in/kylechasse/",
+    instagram: "https://www.instagram.com/kyle4crypto/",
+  },
+  {
+    profileImg: "/assets/images/ad-5.webp",
+    title: "web developer",
+    name: "YEADH HASAN",
+    about:
+      "Founder of themebeyond.com with a decade of experience in the Web Development space",
+    twitter: "https://twitter.com/yeadhhasan",
+    linkedin: "https://www.linkedin.com/in/yeadh-hasan-7b395264/",
+    instagram: "https://www.instagram.com/yeadhhasan/",
+  },
+];

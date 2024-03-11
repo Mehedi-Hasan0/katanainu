@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-
-export default function About() {
+export default function TheGame() {
   return (
     <main className="overflow-hidden">
       <div className="bg-[url('/assets/images/team_bg.webp')] bg-cover pt-36 sm:pt-44 pb-0 md:pt-48 lg:pt-72 md:pb-20">
