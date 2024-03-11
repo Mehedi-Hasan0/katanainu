@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ScrollTop from "@/components/shared/ScrollTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${grind.variable} ${jost.variable} ${oswald.variable}`}
       >
+        <ScrollTop />
         <Navbar />
         {children}
         <Footer />

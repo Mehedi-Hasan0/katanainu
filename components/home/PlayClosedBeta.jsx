@@ -2,6 +2,7 @@ import { gameDownloadOptions, gameTags } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa6";
+import Tags from "./Tags";
 
 const PlayClosedBeta = () => {
   return (
@@ -161,7 +162,11 @@ const PlayClosedBeta = () => {
 
               {/* 2nd key options */}
               <div className="access-key-options-2 relative w-full lg:w-[80%]">
-                <Link href={"#"} target="_blank" rel="noreffrer">
+                <Link
+                  href={"https://opensea.io/collection/katanainu-takeru"}
+                  target="_blank"
+                  rel="noreffrer"
+                >
                   <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[42%]">
                     Hold{" "}
                     <span className="text-[#f9c306]">
@@ -183,8 +188,12 @@ const PlayClosedBeta = () => {
 
               {/* 3rd key options */}
               <div className="access-key-options-3 relative w-full lg:w-[80%]">
-                <Link href={"#"} target="_blank" rel="noreffrer">
-                  <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[25%]">
+                <Link
+                  href={"https://hub.gamezone.io/projects/kata-inu"}
+                  target="_blank"
+                  rel="noreffrer"
+                >
+                  <h3 className="font-jost italic text-base sm:text-lg text-white font-semibold uppercase pr-[25%] hover:text-[#f9c306] transition-all duration-300 ease-in-out">
                     Hold one of the below combinations for the{" "}
                     <span className="text-[#f9c306]">
                       GameZone Sword or Bluezilla Axe NFT&apos;s:
@@ -194,19 +203,7 @@ const PlayClosedBeta = () => {
               </div>
 
               {/* tags */}
-              <div className="mt-4 md:mt-6 w-full lg:w-[80%]">
-                <ul className="flex flex-wrap gap-3 2xl:gap-5">
-                  {gameTags.map((tag, i) => (
-                    <li
-                      key={i}
-                      className="bg-[#12151b] text-sm sm:text-base md:text-lg capitalize text-white py-[6px] px-3 rounded-md font-jost"
-                    >
-                      <span className="text-[#f9c306]">{tag.type}</span>{" "}
-                      {tag.tags}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <Tags />
             </div>
           </div>
 

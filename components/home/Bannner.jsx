@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Bannner = () => {
   return (
-    <section className="banner-section ">
+    <section className="banner-section relative">
       <video
         src="https://res.cloudinary.com/dlhexsnxq/video/upload/v1709041993/bg-video_lq0fuk.mp4"
         autoPlay
