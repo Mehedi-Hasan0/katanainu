@@ -10,10 +10,9 @@ import "swiper/css/scrollbar";
 import { sliderImg } from "@/constant";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Link from "next/link";
+
 import { FaPlay } from "react-icons/fa6";
-import { Dialog, DialogContent } from "../ui/dialog";
-import { DialogTrigger } from "@radix-ui/react-dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const TrailerCarouosel = () => {
   const [innerWidth, setInnerWidth] = useState(
