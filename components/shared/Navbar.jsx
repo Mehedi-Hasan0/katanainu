@@ -107,9 +107,8 @@ const Navbar = () => {
                     }`}
                   >
                     {link.subMenu?.map((subM, i) => (
-                      <li>
+                      <li key={i}>
                         <Link
-                          key={i}
                           href={subM.path}
                           onMouseEnter={() => setActiveSubMenu(i)}
                           onMouseLeave={() => setActiveSubMenu(-1)}
