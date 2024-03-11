@@ -25,7 +25,7 @@ export default function About() {
                 Katana Inu promotes gaming innovation by efficiently merging two
                 revolutionary technologies — gaming and blockchain. As an
                 all-encompassing ecosystem for gamers and traders, powered by
-                DeFi and NFT, Katana Inu's objective is simple: to create a
+                DeFi and NFT, Katana Inu&apos;s objective is simple: to create a
                 system where gamers can earn from their playtime. Over 1 billion
                 PC gamers play traditional games for several hours daily without
                 profiting from their grind. We hope to change this by developing
