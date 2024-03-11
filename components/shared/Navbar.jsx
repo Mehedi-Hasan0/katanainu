@@ -5,6 +5,7 @@ import Link from "next/link";
 import MobileNavbar from "./MobileNavbar";
 import { navlinks } from "@/constant";
 import { useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -12,6 +13,8 @@ const Navbar = () => {
   const [isFirstLinkHovered, setIsFirstLinkHovered] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(-1);
   const subMenuRef = useRef(null);
+
+  const pathName = usePathname();
 
   const handleFirstLinkHover = () => {
     setIsFirstLinkHovered(true);
@@ -76,55 +79,53 @@ const Navbar = () => {
           </Link>
 
           {/* nav links */}
-          <ul className="hidden lg:flex items-center text-sm text-primary-color font-semibold uppercase xl:flex-1 2xl:flex-initial xl:ml-5">
+          <ul
+            className="hidden lg:flex items-center text-sm text-primary-color font-semibold uppercase xl:flex-1 2xl:flex-initial xl:ml-5"
+            ref={subMenuRef}
+          >
             {navlinks.textLinks.map((link, i) => (
-              <>
-                <li
-                  key={i}
-                  className={`py-5 px-4 2xl:px-8 ${
-                    i === 0 && isFirstLinkHovered ? "relative" : ""
+              <li
+                key={i}
+                className={`py-5 px-4 2xl:px-8 ${
+                  i === 0 && isFirstLinkHovered ? "relative" : ""
+                }`}
+              >
+                <Link
+                  href={link.path}
+                  className={`text-base 2xl:text-lg relative hover:text-[#f5a238] ${
+                    i !== 0 && "nav-links"
+                  }`}
+                  onMouseEnter={i === 0 ? handleFirstLinkHover : undefined}
+                >
+                  {link.label}
+                </Link>
+                {/* sub menu */}
+                <ul
+                  onMouseLeave={i === 0 ? handleFirstLinkMouseLeave : undefined}
+                  className={`top-[115%] left-0 transition-all duration-700 ease-in-out rounded-[5px] min-w-[230px] py-4 z-50 -mt-5 ${
+                    isFirstLinkHovered && i === 0
+                      ? "w-full opacity-100 absolute bg-[#0d0d0f] animate-fade-in"
+                      : "opacity-0 hidden"
                   }`}
                 >
-                  <Link
-                    href={link.path}
-                    className={`text-base 2xl:text-lg relative hover:text-[#f5a238] ${
-                      i !== 0 && "nav-links"
-                    }`}
-                    onMouseEnter={i === 0 ? handleFirstLinkHover : undefined}
-                  >
-                    {link.label}
-                  </Link>
-                  {/* sub menu */}
-                  <ul
-                    ref={subMenuRef}
-                    onMouseLeave={
-                      i === 0 ? handleFirstLinkMouseLeave : undefined
-                    }
-                    className={`top-[115%] left-0 transition-all duration-700 ease-in-out rounded-[5px] min-w-[230px] py-4 z-50 -mt-5 ${
-                      isFirstLinkHovered && i === 0
-                        ? "w-full opacity-100 absolute bg-[#0d0d0f] animate-fade-in"
-                        : "opacity-0 hidden"
-                    }`}
-                  >
-                    {link.subMenu?.map((subM, i) => (
-                      <li key={i}>
-                        <Link
-                          href={subM.path}
-                          onMouseEnter={() => setActiveSubMenu(i)}
-                          onMouseLeave={() => setActiveSubMenu(-1)}
-                          className={`py-4 px-5 border-t border-b border-dashed border-transparent hover:border-[#f5a238] transition-all duration-700 ease-in-out cursor-pointer block ${
-                            activeSubMenu === i
-                              ? "text-[#f5a238]"
-                              : "text-white"
-                          }`}
-                        >
-                          {subM.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              </>
+                  {link.subMenu?.map((subM, i) => (
+                    <li key={i}>
+                      <Link
+                        href={subM.path}
+                        onMouseEnter={() => setActiveSubMenu(i)}
+                        onMouseLeave={() => setActiveSubMenu(-1)}
+                        className={`py-4 px-5 border-t border-b border-dashed border-transparent hover:border-[#f5a238] transition-all duration-700 ease-in-out cursor-pointer block ${
+                          activeSubMenu === i || pathName === subM.path
+                            ? "text-[#f5a238]"
+                            : "text-white"
+                        }`}
+                      >
+                        {subM.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
             ))}
           </ul>
 
