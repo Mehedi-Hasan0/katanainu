@@ -76,7 +76,10 @@ const Navbar = () => {
           </Link>
 
           {/* nav links */}
-          <ul className="hidden lg:flex items-center text-sm text-primary-color font-semibold uppercase xl:flex-1 2xl:flex-initial xl:ml-5">
+          <ul
+            className="hidden lg:flex items-center text-sm text-primary-color font-semibold uppercase xl:flex-1 2xl:flex-initial xl:ml-5"
+            ref={subMenuRef}
+          >
             {navlinks.textLinks.map((link, i) => (
               <>
                 <li
@@ -96,7 +99,6 @@ const Navbar = () => {
                   </Link>
                   {/* sub menu */}
                   <ul
-                    ref={subMenuRef}
                     onMouseLeave={
                       i === 0 ? handleFirstLinkMouseLeave : undefined
                     }
