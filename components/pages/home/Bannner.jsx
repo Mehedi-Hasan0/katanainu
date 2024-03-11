@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
-import ArrowIcon from "../shared/ArrowIcon";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import ArrowIcon from "@/components/shared/ArrowIcon";
 
 const Bannner = () => {
   return (

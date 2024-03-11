@@ -1,9 +1,9 @@
+import { Button } from "@/components/ui/button";
 import { brandLinks } from "@/constant";
 import { aboutKatanaInu } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { Button } from "../ui/button";
 
 const Brand = () => {
   return (
