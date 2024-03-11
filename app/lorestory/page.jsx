@@ -192,7 +192,7 @@ export default function LoreStory() {
             <p className="text-xs sm:text-sm md:text-base text-[#d3d3d3] font-medium">
               Some of our noble heroes hope to restore the land to its former
               balance, some to claim power & others to destroy the relics & thus
-              ensure the lands' destruction.
+              ensure the lands destruction.
             </p>
             <p className="text-xs sm:text-sm md:text-base text-[#d3d3d3] font-medium">
               You are the Katana Inu, chosen hero of the Katana Monk Sect & the
