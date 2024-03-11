@@ -58,7 +58,7 @@ const Footer = () => {
                     href={link.link}
                     target="_blank"
                     rel="noreferer"
-                    className="text-white opacity-70 text-base"
+                    className="text-white hover:text-[#ffb42f] hover:opacity-100 transition-all duration-300 ease-in opacity-70 text-base"
                   >
                     {link.label}
                   </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
                     href={link.link}
                     target="_blank"
                     rel="noreferer"
-                    className="text-white opacity-70 text-base"
+                    className="text-white  hover:text-[#ffb42f] hover:opacity-100 transition-all duration-300 ease-in opacity-70 text-base"
                   >
                     {link.label}
                   </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                     href={link.link}
                     target="_blank"
                     rel="noreferer"
-                    className="text-white opacity-70 text-base"
+                    className="text-white  hover:text-[#ffb42f] hover:opacity-100 transition-all duration-300 ease-in opacity-70 text-base"
                   >
                     {link.label}
                   </Link>
