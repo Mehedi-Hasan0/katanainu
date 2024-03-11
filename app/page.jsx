@@ -1,14 +1,14 @@
-import Bannner from "@/components/home/Bannner";
-import Blogs from "@/components/home/Blogs";
-import Brand from "@/components/home/Brand";
-import ChoosePlayer from "@/components/home/ChoosePlayer";
-import Newsletter from "@/components/home/Newsletter";
-import Partner from "@/components/home/Partner";
-import PlayClosedBeta from "@/components/home/PlayClosedBeta";
-import Requirements from "@/components/home/Requirements";
-import TokenOverview from "@/components/home/TokenOverview";
-import Trailers from "@/components/home/Trailers";
-import WhereToBuyToken from "@/components/home/WhereToBuyToken";
+import Bannner from "@/components/pages/home/Bannner";
+import Blogs from "@/components/pages/home/Blogs";
+import Brand from "@/components/pages/home/Brand";
+import ChoosePlayer from "@/components/pages/home/ChoosePlayer";
+import Newsletter from "@/components/pages/home/Newsletter";
+import Partner from "@/components/pages/home/Partner";
+import PlayClosedBeta from "@/components/pages/home/PlayClosedBeta";
+import Requirements from "@/components/pages/home/Requirements";
+import TokenOverview from "@/components/pages/home/TokenOverview";
+import Trailers from "@/components/pages/home/Trailers";
+import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 
 export default function Home() {
   return (
