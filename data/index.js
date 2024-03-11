@@ -386,3 +386,60 @@ export const advisors = [
     instagram: "https://www.instagram.com/yeadhhasan/",
   },
 ];
+
+export const rankingData = {
+  geRule: [
+    {
+      info: "Ranking points that you get from Kills",
+      percent: "40%",
+    },
+    {
+      info: "Placement points that you get from each map",
+      percent: "20%",
+    },
+    {
+      info: "NFTs Points that you get by purchasing is",
+      percent: "30%",
+    },
+    {
+      info: "Time you spent on the map you get",
+      percent: "10%",
+    },
+  ],
+  rarerityPoint: [
+    {
+      label: "Uncommon",
+      point: "2 point",
+    },
+    {
+      label: "Rare",
+      point: "5 point",
+    },
+    {
+      label: "Mythical",
+      point: "7.5 point",
+    },
+    {
+      label: "Legendary",
+      point: "15 points",
+    },
+    {
+      label: "Immortal",
+      point: "30 points",
+    },
+  ],
+  pointDesc: [
+    {
+      type: "Kills",
+      desc: "All the kills done will give you points that would be Player kills Divided by total number of kills.",
+    },
+    {
+      type: "placement",
+      desc: "The placement you achieve in each map gives you you additional points to rank more.",
+    },
+    {
+      type: "time",
+      desc: "More time you play the game gives you additional ranking points.",
+    },
+  ],
+};
