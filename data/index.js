@@ -541,3 +541,106 @@ export const facData = [
       "The Berserkers roam the fringes of society, inhabiting the wasteland of Shen. Rumored to once be peaceful Bulls & Bears who were overtaken by maddess, the Berzerk have no sense of good or love. Berserkers are known for attacking any Shukutai who is brave enough to journey into the wastelands; survivors from such attacks are scarce. ",
   },
 ];
+
+export const faqData = [
+  {
+    title: "What is Katana Inu?",
+    ans: "Katana Inu isn't merely another hopeful project in the making. We're striving to create an epic, top-tier gaming experience comparable to the likes of Fortnite or League of Legends,Check out the information below for a sneak peek of our project! Katana Inu is a (crypto, NFT) PC game with AAA graphics, limited NFTs and own marketplace. It is a third-person game that focuses on fast-paced sword and spell fighting.The goal is to attract web2 gamers to come over to web3 and compete with big games like Fortnite, PubG, League of Legends etc. The focus is Fun2Play. Having Rankings, collecting rare NFTs, participating in Tournaments and playing in eSports leagues.",
+  },
+  {
+    title: "Who are the Team Members?",
+    ans: "A Group from Space that has come together - 15 Team Members from all over Europe and 35 Game Devs and 5 Blockchain Developers, that has already accompanied many Projects together and is well-rehearsed.",
+  },
+  {
+    title: "There is no Sell or Buy Limit",
+    ans: "There is no buy and sell limit you can buy and sell on dex and cex that $kata is available on.",
+  },
+  {
+    title: "Where can we see the whitepaper?",
+    ans: "https://katanainu.com/katanainuwhitepaper.pdf",
+  },
+  {
+    title: "When will the game be released?",
+    ans: "The Closed beta was released 31. March 2023. Open Beta has no date yet, but probably Q4 2023 or Q1 2024. Full Release is not estimated yet",
+  },
+  {
+    title: "Will the game launch on different platforms?",
+    ans: "Yes. After PC version is finished, we will start working on mobile version and other platformers like Playstation and Xbox.",
+  },
+  {
+    title: "What is an NFT?",
+    ans: "An NFT is a “Non-Fungible Token”. Here is a great glossary explaining what NFT's and other crypto terms mean: https://coinmarketcap.com/alexandria/glossary/non-fungible-token",
+  },
+  {
+    title: "Where can players buy and sell NFTs?",
+    ans: "Buying & selling can be done on our marketplace, but there is also other possiblities like Opensea or Looksrare.",
+  },
+  {
+    title: "Who can people contact for promotions, AMAs, proposals?",
+    ans: "People can reach us on our socials, but for business proposals it would be best to write to fill the form provided on the website.",
+  },
+  {
+    title: "Where can I buy $KATA tokens?",
+    ans: "Best way would be on Pancakeswap or Uniswap with Metamask wallet. We are big supporters of keeping tokens in a non-custodial wallet. Token is also listed on plenty of Centralised Exchanges like Hotbit, Probit, MEXC Global, Bitmart, Digifinex.",
+  },
+  {
+    title: "Which blockchain is the game being developed on?",
+    ans: "The game is on Binance Smart Chain.",
+  },
+  {
+    title: "Will Katana Inu be pay to win?",
+    ans: "Absolutely NOT. We are against pay to win systems.",
+  },
+  {
+    title: "What is your vision for the project?",
+    ans: "For our game to become the biggest competitive P2E game. For our marketplace to become one-stop solution for Game-Fi.",
+  },
+  {
+    title: "Where can we learn more about Katana Inu?",
+    ans: "All information can be found on the website, but if you want help directly feel free to join our discord community.",
+  },
+  {
+    title: "What do I need to start earning?",
+    ans: "X amount of tokens and 2D NFT. 3D skins will act as earning multiplier, but are not necessary.",
+  },
+  {
+    title: "Utility of 2D NFTs?",
+    ans: "There is many!! Read this section carefully to learn more:'Link to 2D utility explanation on website here'",
+  },
+  {
+    title: "Utility of 3D NFTs?",
+    ans: "Except for the cosmetics, different rarity of skins will give different in-game ranking points. Ranking points are tied to user profile and non-transferable",
+  },
+  {
+    title: "What is The Forge?",
+    ans: "Forge is the only way to craft immortal skins which will ONLY be available by forging. In-depth information can be found here: 'Link'",
+  },
+  {
+    title: "Can I play the game without NFTs?",
+    ans: "Yes, game is free to play, but earning skins will be limited, and you will not be able to earn tokens and participate in tournaments.",
+  },
+  {
+    title: "How can I earn in the game?",
+    ans: "You will be able to earn NFTs and tokens. NFTs will be awarded with different in-game mechanics like solving quests, airdrops, unlocking battle pass skins as you level up etc. Tokens will be earned through tournaments, and through ranking on the leaderboard.",
+  },
+  {
+    title: "How does the leaderboard work?",
+    ans: "Rarity of in-game NFTs will affect how much you can earn. Higher rarity NFTs = Higher multiplier of ranking points Higher ranking = more token rewards Leaderboard will have daily, weekly, monthly, and quaterly winners. Users will be able to claim rewards whenever they want.",
+  },
+  {
+    title: "Are there any guilds participating in Katana Inu?",
+    ans: "Yes, we partnered with many guilds which will play the game competitively!",
+  },
+  {
+    title: "Will you organize tournaments?",
+    ans: "Yes, we will organize tournaments ourselves, and many of our partners and sponsors will organize them as well.",
+  },
+  {
+    title: "Who is the team behind Katana Inu?",
+    ans: "The Katana Inu team is international and has many team members with extensive Web2 & Web3 experience. Full list can be found here: 'Link'",
+  },
+  {
+    title: "What differentiates you from the competition?",
+    ans: "We are proud to be working on a game that is not only play to earn, but is also really FUN! Check it out yourself!",
+  },
+];
