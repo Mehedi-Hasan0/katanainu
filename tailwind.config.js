@@ -78,8 +78,8 @@ module.exports = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.4s ease-in",
-        "accordion-up": "accordion-up 0.4s ease-out",
+        "accordion-down": "accordion-down 0.3s ease-in-out",
+        "accordion-up": "accordion-up 0.3s ease-in-out",
         "fade-in": "fade-in 0.7s ease-in-out",
       },
     },
