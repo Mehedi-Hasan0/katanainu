@@ -9,7 +9,7 @@ export default function BabyDogeNftPage() {
           <Image
             src={"/assets/images/blog-img-1.webp"}
             alt="baby doge"
-            width={1136}
+            width={1230}
             height={284}
           />
 
@@ -39,7 +39,7 @@ export default function BabyDogeNftPage() {
           <Image
             src={"/assets/images/blogs/baby1.jpeg"}
             alt="baby doge"
-            width={1136}
+            width={1230}
             height={284}
             className="my-7"
           />
