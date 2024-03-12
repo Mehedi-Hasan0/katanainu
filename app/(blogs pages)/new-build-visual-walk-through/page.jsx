@@ -32,7 +32,7 @@ export default function NewBuildWalkThrough() {
             </span>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
               Before diving into the guide, take a moment to explore our recent
-              blog highlighting the new build. In this post, we've shared
+              blog highlighting the new build. In this post, we&apos;ve shared
               details of all the updates, featuring significant improvements to
               the UI, VFX, sound, and overall gameplay. Our dedicated developers
               have worked tirelessly to ensure that our community enjoys the
@@ -48,7 +48,8 @@ export default function NewBuildWalkThrough() {
           </div>
           <div className="flex flex-col gap-2">
             <h4 className="font-jost text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white">
-              Here's a detailed guide on downloading and playing Katana Inu.
+              Here&apos;s a detailed guide on downloading and playing Katana
+              Inu.
             </h4>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
               1. There are three ways you can play the game:
@@ -150,8 +151,8 @@ export default function NewBuildWalkThrough() {
               7. Skins and Weapons Customization:
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              Upon logging into the game, you'll notice several tabs displayed
-              at the top of the main menu or screen. Navigate to the
+              Upon logging into the game, you&apos;ll notice several tabs
+              displayed at the top of the main menu or screen. Navigate to the
               customization tab where you can explore a wide selection of
               weapons including swords, axes, and pole arms, as well as various
               skins available in the game. This feature empowers you to
@@ -202,15 +203,15 @@ export default function NewBuildWalkThrough() {
               8. Select game mode:
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              After choosing your character and weapons, proceed to the "Play"
-              tab to select a game mode. We strongly advise starting with the
-              tutorial to acquaint yourself with the gameplay and game
-              mechanics.
+              After choosing your character and weapons, proceed to the
+              &ldquo;Play&ldquo; tab to select a game mode. We strongly advise
+              starting with the tutorial to acquaint yourself with the gameplay
+              and game mechanics.
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              Embark on a tutorial journey where you'll acquire essential skills
-              in character control, combat tactics against foes, and proficiency
-              in utilizing your character's abilities.
+              Embark on a tutorial journey where you&apos;ll acquire essential
+              skills in character control, combat tactics against foes, and
+              proficiency in utilizing your character&apos;s abilities.
             </p>
             <Image
               src="/assets/images/blogs/nb13.webp"
@@ -250,11 +251,11 @@ export default function NewBuildWalkThrough() {
               9. Start the game and have fun:
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              After mastering the tutorial, you'll be ready to dive into the
-              game with skill and confidence. Gather your friends, form a party
-              for exciting 3v3 matches, or engage in intense 1v1 duels. Embrace
-              the thrill of gameplay and relish the camaraderie of competition
-              with your companions.
+              After mastering the tutorial, you&apos;ll be ready to dive into
+              the game with skill and confidence. Gather your friends, form a
+              party for exciting 3v3 matches, or engage in intense 1v1 duels.
+              Embrace the thrill of gameplay and relish the camaraderie of
+              competition with your companions.
             </p>
             <Image
               src="/assets/images/blogs/nb20.webp"

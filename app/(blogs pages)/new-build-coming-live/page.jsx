@@ -25,21 +25,22 @@ export default function ComingLive() {
                 Hello Katafam,
               </strong>
               <p className="text-[#787878] text-xs sm:text-sm md:text-base mt-1">
-                We're thrilled to announce our new game build is coming live at
-                7:30pm CET on Thursday 8th of February, 2024. As you all know
-                that our primary goal is to consistently provide our community
-                with a gaming experience that they'll not only love but also
-                cherish every aspect of. With this objective in mind, our new
-                update promises the introduction of exciting features such as a
-                fresh UI, enhanced textures, improvements in in-game lighting,
-                and a comprehensive graphics overhaul. These enhancements are
-                designed to immerse our community in an exceptional gaming
-                experience, where every moment is a delight to enjoy.
+                We&apos;re thrilled to announce our new game build is coming
+                live at 7:30pm CET on Thursday 8th of February, 2024. As you all
+                know that our primary goal is to consistently provide our
+                community with a gaming experience that they&apos;ll not only
+                love but also cherish every aspect of. With this objective in
+                mind, our new update promises the introduction of exciting
+                features such as a fresh UI, enhanced textures, improvements in
+                in-game lighting, and a comprehensive graphics overhaul. These
+                enhancements are designed to immerse our community in an
+                exceptional gaming experience, where every moment is a delight
+                to enjoy.
               </p>
             </span>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
               Our primary goal is to consistently provide our community with a
-              gaming experience that they'll not only love but also cherish
+              gaming experience that they&apos;ll not only love but also cherish
               every aspect of. With this objective in mind, our upcoming update
               promises the introduction of exciting features such as a fresh UI,
               enhanced textures, improvements in in-game lighting, and a
@@ -48,8 +49,8 @@ export default function ComingLive() {
               where every moment is a delight to enjoy.
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              Here's a comprehensive update on the issues we've addressed across
-              various aspects of the game:
+              Here&apos;s a comprehensive update on the issues we've addressed
+              across various aspects of the game:
             </p>
           </div>
 
