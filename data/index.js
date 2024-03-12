@@ -443,3 +443,101 @@ export const rankingData = {
     },
   ],
 };
+
+export const facData = [
+  {
+    imgUrl: "/assets/images/hero4.webp",
+    title1: "faction name:",
+    title1name: "katana monk sect",
+    title2: "character",
+    title2name: "katana inu",
+    title3: "location",
+    title3name: "tera [temple]",
+    desc1:
+      "An ancient order of ascetic monks who populate the temples of Shen. The Katana Monk’s claim to have an unbroken lineage, passed down from the 1st Katana Inu. Katana Monks believe their progenitor & central figure, the 1st Katana Inu, fought alongside the Celestial Mother in the great cosmic battle against the Chuo Ginko demon.",
+    desc2:
+      "The Katana Monks cultivate virtues of compassion, selflessness & typically spend their lives practicing martial arts, internal energetic arts & studying in the ornate temples of Shen. With an immensely rigorous training regime, Katana Monks push the limits of the mind, body & spirit. The devotion to their chosen Katana Inu & Celestial Mother give the Katana Monks their reputation as holy warriors.",
+  },
+  {
+    imgUrl: "/assets/images/doge.webp",
+    title1: "faction name:",
+    title1name: "Kodo priests",
+    title2: "character",
+    title2name: "Doge",
+    title3: "location",
+    title3name: "tera [temple]",
+    desc1:
+      "The Doge priests maintain the core religion followed by the Shukutai peoples & can be found in the various temples which occupy the landscape of Shen.",
+    desc2:
+      "The Kodo religion is based around the ancient mythos of the Celestial Mother & her battle with the Chuo Ginko demon. Followers of the Kodo venerate the Celestial Mother and her teachings of decentralization. The Kodo religion claims to be as old as the land itself & holds equality, decentralization & balance as its main tenets.",
+    desc3:
+      "The Kodo religion is based around the ancient mythos of the Celestial Mother & her battle with the Chuo Ginko demon. Followers of the Kodo venerate the Celestial Mother and her teachings of decentralization. The Kodo religion claims to be as old as the land itself & holds equality, decentralization & balance as its main tenets.",
+  },
+  {
+    imgUrl: "/assets/images/bull.webp",
+    title1: "faction name:",
+    title1name: "Bull clan",
+    title2: "character",
+    title2name: "Bull",
+    title3: "location",
+    title3name: "Ginko [bank]",
+    desc1:
+      "The Bull clan finds its roots in growth and prosperity, originally migrating to Shen some centuries after the great battle of the Celestial Mother. A fierce clan whose power drives the progress of Shukutai society. Forever linked with their close ancestral counter-parts the Bear Clan, the Bulls once lived in balance, content with the ebb & flow of control laid out for them in the Kodo scriptures.",
+    desc2:
+      "Since the rise of the Ginko clan, the Bull clan has been manipulated into extremity & greed, a natural tendency of the Bulls, maliciously exploited by the Ginko clan. The Bull clan inhabits the bank biome, which once served as a prosperous center for all trade in the land of Shen that now finds itself a carefully controlled area.  ",
+  },
+  {
+    imgUrl: "/assets/images/hero3.webp",
+    title1: "faction name:",
+    title1name: "Bear clan",
+    title2: "character",
+    title2name: "warlord [Bear]",
+    title3: "location",
+    title3name: "Ginko [bank]",
+    desc1:
+      "The Bear clan finds its roots in hibernation & revival. A cautious yet powerful clan which finds itself constantly in dispute with its Bull clan relatives. The warlord bears used to guard over the trade zones of Shen, ensuring all Shukutai received fair prices in trade, ever vigilant for Bulls hoping to sell at over-inflated prices.",
+    desc2:
+      "For most of Shukutai history, the Bear clan acted in sync and harmony with the Bulls & other members of Shuktai society. Offering their prayers to the Doge priests, keeping records with Blockchain daughters & existing in balanced peace. ",
+    desc3:
+      "Although less prone to the greed of the Bulls, the Bear clan too decayed over the centuries under the influence of the Ginko clan. Now in fierce competition with the Bulls, an eternal war seems to be waged in the trade zones (bank biome) with the Bear clan, led by their Warlords & desires for lower prices in trade. The imbalance brought about between the Bull & Bear clan has destabilized Shukutai economies beyond comprehension. ",
+  },
+  {
+    imgUrl: "/assets/images/hero2.webp",
+    title1: "faction name:",
+    title1name: "Shukutai record keepers",
+    title2: "character",
+    title2name: "blockchain",
+    title3: "location",
+    title3name: "yutopia [utopia]",
+    desc1:
+      "Daughters of the Celestial Mother & keeper of all Shukutai records, the Blockchain daughters are a mysterious group of beings gifted with heightened memory & cognitive abilities. Coming into existence shortly after the vanquishing of the Ginko Demon, the Blockchain daughters believe they hold the essence of the Celestial Mother in their souls & attribute this to their extraordinary powers.",
+    desc2:
+      "The records of every transaction & notable happening in Shen were carefully documented and verified among all other Blockchain daughters as laid out in the record keepers canonical text, the ‘Kodo Kamisama’ protocols. Said to be written by the Celestial Mother herself, these protocols guide the Blockchain daughters in their ongoing mission to ensure all information & value is decentralized & fairly distributed among the wider Shukutai society.",
+    desc3:
+      "Each Blockchain daughter used to inhabit its own region, keeping track of the necessary information & trade within its designated region. Telepathic connection with the other sisters allowed the Blockchain daughters to remain in-sync, ensuring all trade remained balanced & fair.",
+    desc4:
+      "Far from the noble vision of their past, the Blockchain daughters now find themselves enslaved by the Ginko clan. Forced to analyze highly centralized streams of information, the Blockchain daughters pray for the return of the Celestial Mother to her throne on the moon.",
+  },
+  {
+    imgUrl: "/assets/images/flokiinu.webp",
+    title1: "faction name:",
+    title1name: "assassin clan",
+    title2: "character",
+    title2name: "floki inu",
+    title3: "location",
+    title3name: "arechi [wasteland]",
+    desc1:
+      "Members of the Assassin clan hold self-preservation above all else. Once a crucial member of Shukutai society, the members of the assassin clan lost all moral direction after the rise of the Ginko clan & split from society. Not quite good, not quite bad, but heavily chaotic, the assassins hold no place in the squables of the Shukutai or Ginko. Assassins see opportunity amidst the chaos of Shen & hold no moral compass in their dealings. Led by their cunning leader Floki Inu, the Assassin clan are a boldly unpredictable & volatile group.",
+  },
+  {
+    imgUrl: "/assets/images/prob.webp",
+    title1: "faction name:",
+    title1name: "wild shukutai",
+    title2: "character",
+    title2name: "berserk",
+    title3: "location",
+    title3name: "arechi [wasteland]",
+    desc1:
+      "The Berserkers roam the fringes of society, inhabiting the wasteland of Shen. Rumored to once be peaceful Bulls & Bears who were overtaken by maddess, the Berzerk have no sense of good or love. Berserkers are known for attacking any Shukutai who is brave enough to journey into the wastelands; survivors from such attacks are scarce. ",
+  },
+];
