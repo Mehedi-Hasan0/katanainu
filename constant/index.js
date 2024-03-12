@@ -52,7 +52,7 @@ export const navlinks = {
     },
     {
       label: "Blog",
-      path: "/blog",
+      path: "/blogs",
     },
   ],
   socialLinks: [

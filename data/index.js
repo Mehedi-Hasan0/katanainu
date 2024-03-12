@@ -644,3 +644,105 @@ export const faqData = [
     ans: "We are proud to be working on a game that is not only play to earn, but is also really FUN! Check it out yourself!",
   },
 ];
+
+export const blogPageData = [
+  {
+    imgUrl: "/assets/images/blog-img-1.webp",
+    title: "Katana Inu Partners with Baby Doge for Upcoming NFT collection",
+    date: "10 March 2024",
+    greetings:
+      "We are thrilled to announce a remarkable collaboration between Katana Inu and Baby Doge. This collaboration brings together two dynamic communities passionate about digital collectibles and gaming as we extend and enrich both projects. Part of this collaboration is our exclusive NFT collection which will feature rare weapons and special characters.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-2.webp",
+    title: "New Build in Visual Walk Through",
+    date: "07 Feb 2024",
+    greetings:
+      "As we approach the eagerly awaited release of our new build, we are excited to provide comprehensive details in a walkthrough of the game. Before diving into the guide, take a moment to explore our recent blog highlighting the new build. In this post, we've shared details of all the updates, featuring significant improvements to the UI, VFX, sound...",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-3.webp",
+    title: "New game build is coming live!",
+    date: "05 Feb 2024",
+    greetings:
+      "We're thrilled to announce our new game build is coming live at 7:30pm CET on Thursday 8th of February, 2024. As you all know that our primary goal is to consistently provide our community with a gaming experience that they'll not only love but also cherish every aspect of. With this objective in mind, our new update promises the introduction of exciting features such as a fresh UI",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-4.webp",
+    title: "A year of strategic progress",
+    date: "22 Dec 2023",
+    greetings:
+      "As we approach the year's end, we're filled with nothing but cherished memories of the milestones we've accomplished together. Our achievements this year have been a testament to the incredible support from our community. So, let's take a step back and revisit the collective accomplishments we've achieved side by side. In our yearly recap we'll delve into key highlights such as, Exhibitions and events,",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-5.webp",
+    title: "Katana Inu Game Update: V 1.0.1",
+    date: "21 Nov 2023",
+    greetings:
+      "We're thrilled to share the exciting news about our forthcoming game update: V1.0.1. To ensure our beloved community makes the most of this update, we've planned an extensive month-long campaign filled with a plethora of engaging activities, exclusive sneak peeks. enlightening AMAs, and, of course, the chance to win fantastic prizes, including exclusive In-Game NFTs, $KATA token drops, and more!",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-6.webp",
+    title: "Dev Log: Game Project Updates",
+    date: "10 Oct 2023",
+    greetings:
+      "Over the coming months leading up to December, we plan to roll out various components as standalone game updates. Our focus will be on enhancing Animations, VFX, and backend development.The initial stages of the tournament system will also be completed.Additionally, we are in the process of integrating on-chain data, which we’ll be testing in-house.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-7.webp",
+    title: "Katana Inu Fall Adventure Begins",
+    date: "02 Oct 2023",
+    greetings:
+      "As the world undergoes its seasonal transformation, painting landscapes in vivid shades of red, orange, and gold, we are thrilled to announce the Katana Inu fall season. An exciting event that is set to unfold this fall and will take our community on an adventure they have never witnessed before.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-8.webp",
+    title: "BabyDoge x Katana Inu NFT Collection",
+    date: "24 Aug 2023",
+    greetings:
+      "We've got some news to share about our latest collaboration that's sure to get you pumped. We've teamed up with BabyDoge to bring you the ultimate BabyDoge x Katana Inu NFT Collection. This partnership is about delivering thrilling experiences and exclusive rewards to our amazing players and the wider gaming community.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-9.webp",
+    title: "Welcome Ryan Horn, ex-Binance NFT director and Web3 visionary",
+    date: "19 July 2023",
+    greetings:
+      "In the ever-evolving realm of Web3 and blockchain technology, visionary leaders play a crucial role in shaping the landscape and driving companies forward. Ryan Horn, ex-director of Binance NFTs and the esteemed founder of N3on, a venture accelerator company at the forefront of Web3 innovation",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-10.webp",
+    title:
+      "Welcome Ena Berbic, Ex-Illuvium CMO Joins Katana Inu as Markeing Consultant",
+    date: "19 July 2023",
+    greetings:
+      "We are excited to announce that Ena Berbic has joined Katana Inu as a Marketing Consultant. With a wealth of experience in the gaming industry, Ena brings a proven track record of success in product marketing, go-to-market strategies, and live operations campaigns.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-11.webp",
+    title: "How Play-to-Earn Games are Changing the Gaming Industry",
+    date: "25 May 2023",
+    greetings:
+      "The gaming industry has come a long way since the days of arcade machines and simple computer games. With the rise of high-graphics games and online gaming, the industry has evolved to offer players a wide range of immersive and interactive experiences.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-12.webp",
+    title: "Best Play-to-Earn Games with NFTs",
+    date: "25 May 2023",
+    greetings:
+      "NFT games are a new and exciting development in the gaming industry. Unlike traditional video games, P2E games reward players for their time and effort spent in the game. This concept is made possible through blockchain technology and non-fungible tokens (NFTs). In P2E games, players can own game items as NFTs and earn while playing.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-13.webp",
+    title: "What is the Highest Earning NFT?",
+    date: "25 May 2023",
+    greetings:
+      "Many digital artists are adopting NFTs, attracted by the promise of ownership and control over their artwork. NFTs are special tokens that prove you own a unique work of art or content on the blockchain. They have opened new possibilities for artists and collectors to create, buy, sell, and show off their works online.",
+  },
+  {
+    imgUrl: "/assets/images/blog-img-14.webp",
+    title: "What is the Number One NFT Game?",
+    date: "25 May 2023",
+    greetings:
+      "Imagine playing your favorite video game and earning real money for it. Sounds too good to be true? Well, this is our reality today. Thanks to play-to-earn games, you can now enjoy and profit from your gaming passion like never before.",
+  },
+];
