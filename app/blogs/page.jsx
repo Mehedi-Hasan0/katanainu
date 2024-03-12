@@ -18,7 +18,7 @@ export default function Blogs() {
 
         {/*  */}
         <div className="flex flex-col md:flex-row items-start gap-6 mt-10 mb-10 md:mt-14 md:mb-20">
-          <Link href={"#"} className=" w-full md:w-[42%] ">
+          <Link href={firstBlog.link} className=" w-full md:w-[42%] ">
             <Image
               src={firstBlog.imgUrl}
               alt={firstBlog.title}
@@ -29,7 +29,7 @@ export default function Blogs() {
           </Link>
           <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-[58%] md:mx-2 mt-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-jost text-white font-semibold hover:text-[#f5a238] transition duration-500 ease-in-out text-center md:text-start">
-              <Link href={"#"}>{firstBlog.title}</Link>
+              <Link href={firstBlog.link}>{firstBlog.title}</Link>
             </h2>
             <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light">
               {firstBlog.date}
@@ -44,24 +44,24 @@ export default function Blogs() {
           {blogPageData.map((blog, i) => (
             <div
               key={i}
-              className={`rounded-xl border border-[#2a2a2a] hover:border-[#f5a238] transition duration-700 ease-in overflow-hidden ${
+              className={`rounded-lg border border-[#2a2a2a] hover:border-[#f5a238] transition duration-700 ease-in overflow-hidden ${
                 i === 0 && "hidden"
               }`}
             >
-              <Link href={"#"}>
+              <Link href={blog.link}>
                 <Image
                   src={blog.imgUrl}
                   alt="blogs image"
                   width={408}
                   height={270}
-                  className="w-full h-[270px] rounded-xl hover:scale-110 transition-all duration-700 ease-in-out"
+                  className="w-full h-[270px] rounded-lg hover:scale-110 transition-all duration-700 ease-in-out"
                 />
               </Link>
 
               {/* heading & description */}
               <div className="flex flex-col items-center">
                 <h2 className="my-3 font-jost text-xl lg:text-2xl font-semibold text-center px-2 hover:text-[#f5a238] transition duration-500 ease-in-out text-white">
-                  <Link href={"#"}>{blog.title}</Link>
+                  <Link href={blog.link}>{blog.title}</Link>
                 </h2>
                 <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light mb-2 tracking-widest">
                   {firstBlog.date}
