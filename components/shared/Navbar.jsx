@@ -92,7 +92,7 @@ const Navbar = () => {
               >
                 <Link
                   href={link.path}
-                  target={(i === 1 || i === 2) && "_blank"}
+                  target={i === 1 || i === 2 ? "_blank" : "_parent"}
                   rel="noreferer"
                   className={`text-base 2xl:text-lg relative hover:text-[#f5a238] ${
                     i !== 0 && "nav-links"
@@ -114,7 +114,9 @@ const Navbar = () => {
                     <li key={i}>
                       <Link
                         href={subM.path}
-                        target={(i === 5 || i === 6 || i === 7) && "_blank"}
+                        target={
+                          i === 5 || i === 6 || i === 7 ? "_blank" : "_parent"
+                        }
                         rel="noreferer"
                         onMouseEnter={() => setActiveSubMenu(i)}
                         onMouseLeave={() => setActiveSubMenu(-1)}
