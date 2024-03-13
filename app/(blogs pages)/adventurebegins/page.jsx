@@ -38,12 +38,12 @@ export default function AdventureBegins() {
             height={284}
           />
           <p className="text-[#787878] text-xs sm:text-sm md:text-base mt-2">
-            Katana Inu's Autumn Adventure will begin on September 27, 2023 with
-            a lot of surprises for the community, ranging for special in-game
-            weather effects to amazing wallpapers for everyone.
+            Katana Inu&apos;s Autumn Adventure will begin on September 27, 2023
+            with a lot of surprises for the community, ranging for special
+            in-game weather effects to amazing wallpapers for everyone.
           </p>
           <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
-            Here's a glimpse of what awaits you during our Autumn Adventure:
+            Here&apos; a glimpse of what awaits you during our Autumn Adventure:
           </p>
         </div>
 
@@ -85,9 +85,9 @@ export default function AdventureBegins() {
           </p>
           <p className="text-[#787878] text-xs sm:text-sm md:text-base mt-2">
             So, mark your calendars, gather your friends, and embark on this
-            thrilling Autumn Adventure with us. Let's forge lasting memories
-            together as we immerse ourselves in the enchanting spirit of this
-            beautiful fall season!
+            thrilling Autumn Adventure with us. Let&apos;s forge lasting
+            memories together as we immerse ourselves in the enchanting spirit
+            of this beautiful fall season!
           </p>
           <p className="text-[#787878] text-xs sm:text-sm md:text-base mt-2">
             Keep an eye out for more exciting updates, and allow the autumnal
