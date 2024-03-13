@@ -17,7 +17,7 @@ export default function ComingLive() {
             <h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-jost text-white font-bold mb-[6px]">
               New game build is coming live!
             </h2>
-            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
               05 Feb 2024
             </p>
             <span>

@@ -17,7 +17,7 @@ export default function BabyDogeNftPage() {
             <h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-jost text-white font-bold mb-[6px]">
               Katana Inu Partners with Baby Doge for Upcoming NFT collection
             </h2>
-            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
               10 March 2024
             </p>
             <strong className="text-white text-xs sm:text-sm md:text-base">
