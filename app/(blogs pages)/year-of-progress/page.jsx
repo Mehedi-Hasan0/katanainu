@@ -16,7 +16,7 @@ export default function YearProgress() {
           <h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-jost text-white font-bold mb-[6px]">
             A year of strategic progress
           </h2>
-          <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+          <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
             22 Dec 2023
           </p>
           <p className="text-[#787878] text-xs sm:text-sm md:text-base">

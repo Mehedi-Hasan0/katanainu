@@ -17,18 +17,21 @@ export const blogsStaticData = [
   {
     imgUrl: "/assets/images/y3.webp",
     heading: "A year of strategic progress",
+    href: "/year-of-progress",
     description:
       "As we approach the year's end, we're filled with nothing but cherished memories of the milestones we've accomplished together. Our achievements this year have been a testament to the incredible support from our community. So, let's take a step back and revisit the collective accomplishments we've achieved side by side.",
   },
   {
     imgUrl: "/assets/images/2a.webp",
     heading: "Katana Inu Fall Adventure Begins",
+    href: "/adventurebegins",
     description:
       "As the world undergoes its seasonal transformation, painting landscapes in vivid shades of red, orange, and gold, we are thrilled to announce the Katana Inu fall season. An exciting event that is set to unfold this fall and will take our community on an adventure they have never witnessed before.",
   },
   {
     imgUrl: "/assets/images/baby.webp",
     heading: "BabyDoge x Katana Inu NFT Collection",
+    href: "/babydoge",
     description:
       "We've got some news to share about our latest collaboration that's sure to get you pumped. We've teamed up with BabyDoge to bring you the ultimate BabyDoge x Katana Inu NFT Collection. This partnership is about delivering thrilling experiences",
   },
