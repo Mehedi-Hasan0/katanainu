@@ -20,11 +20,12 @@ export default function YearProgress() {
             22 Dec 2023
           </p>
           <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-            As we approach the year's end, we're filled with nothing but
-            cherished memories of the milestones we've accomplished together.
-            Our achievements this year have been a testament to the incredible
-            support from our community. So, let's take a step back and revisit
-            the collective accomplishments we've achieved side by side.
+            As we approach the year&apos;s end, we&apos;re filled with nothing
+            but cherished memories of the milestones we&apos;ve accomplished
+            together. Our achievements this year have been a testament to the
+            incredible support from our community. So, let&apos;s take a step
+            back and revisit the collective accomplishments we&apos;ve achieved
+            side by side.
           </p>
         </div>
 
@@ -37,7 +38,7 @@ export default function YearProgress() {
             height={284}
           />
           <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-            In our yearly recap we'll delve into key highlights such as,
+            In our yearly recap we&apos;ll delve into key highlights such as,
             Exhibitions and events, Key partnerships, major giveaways, NFT
             Projects and more.
           </p>
