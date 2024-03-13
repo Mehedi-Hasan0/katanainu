@@ -30,12 +30,14 @@ const GamePartner = () => {
       </div>
 
       <div className="mt-7 sm:mt-10 flex justify-center items-center">
-        <Button
-          variant="customAnimated"
-          className="px-7 py-3 capitalize 2xl:px-9"
-        >
-          View all
-        </Button>
+        <Link href={"/partners"}>
+          <Button
+            variant="customAnimated"
+            className="px-7 py-3 capitalize 2xl:px-9"
+          >
+            View all
+          </Button>
+        </Link>
       </div>
     </div>
   );
