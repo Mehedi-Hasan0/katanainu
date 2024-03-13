@@ -49,8 +49,8 @@ export default function ComingLive() {
               where every moment is a delight to enjoy.
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              Here&apos;s a comprehensive update on the issues we've addressed
-              across various aspects of the game:
+              Here&apos;s a comprehensive update on the issues we&apos;ve
+              addressed across various aspects of the game:
             </p>
           </div>
 
