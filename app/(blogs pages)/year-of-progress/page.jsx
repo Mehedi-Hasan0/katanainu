@@ -38,7 +38,7 @@ export default function YearProgress() {
             height={284}
           />
           <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-            In our yearly recap we&apos;ll delve into key highlights such as,
+            In our yearly recap well delve into key highlights such as,
             Exhibitions and events, Key partnerships, major giveaways, NFT
             Projects and more.
           </p>
