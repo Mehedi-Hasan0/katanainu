@@ -763,3 +763,329 @@ export const blogPageData = [
       "Imagine playing your favorite video game and earning real money for it. Sounds too good to be true? Well, this is our reality today. Thanks to play-to-earn games, you can now enjoy and profit from your gaming passion like never before.",
   },
 ];
+
+export const partnersPageData = {
+  backers: [
+    {
+      logoUrl: "/assets/images/logo/logo1.png",
+      link: "https://twitter.com/katanainu/status/1470803278644527113",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo2.png",
+      link: "https://www.newtribe.capital/our-portfolio/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo3.png",
+      link: "https://twitter.com/katanainu/status/1470457827021963283",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo4.png",
+      link: "https://bcainvestments.com/blog/partnership-katana-inu/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo5.jpg",
+      link: "#",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo6.png",
+      link: "https://twitter.com/gamezone_app/status/1470447040886984705",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo7.png",
+      link: "https://www.316vc.com/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo8.png",
+      link: "https://weehodl.com/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo9.png",
+      link: "https://twitter.com/paid_network/status/1470759931536035840?lang=en",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo10.png",
+      link: "https://calvertdrive.ventures/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo11.png",
+      link: "https://twitter.com/AussieCapital_/status/1473691388575457289",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo12.png",
+      link: "/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo13.png",
+      link: "https://lvtcapital.com/",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo14.png",
+      link: "https://www.r-930capital.com/portfolio",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo15.jpg",
+      link: "https://twitter.com/GirnasCapital/status/1473041263091924998",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo16.png",
+      link: "https://stakez.capital/#projects",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo17.jpg",
+      link: "#",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo18.jpg",
+      link: "https://twitter.com/vespertinecap/status/1471540537257648135",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo19.png",
+      link: "#",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo20.png",
+      link: "#",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo21.png",
+      link: "#",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo22.png",
+      link: "https://www.bluewheelcapital.com/investments",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo23.png",
+      link: "https://twitter.com/seedthrift/status/1471902193535963138",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo24.png",
+      link: "https://twitter.com/seedthrift/status/1471902193535963138",
+    },
+    {
+      logoUrl: "/assets/images/logo/logo25.png",
+      link: "#",
+    },
+  ],
+  gamePartner: [
+    {
+      logoUrl: "/assets/images/logo/g1.jpeg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g2.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g3.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g4.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g5.webp",
+    },
+    {
+      logoUrl: "/assets/images/logo/g6.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g7.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g8.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g9.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g10.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g11.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g12.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g13.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g14.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g15.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g16.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g17.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g18.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g19.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g20.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g21.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g22.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g23.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g24.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g25.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g26.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g27.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g28.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g29.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g30.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g31.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g32.svg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g33.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g34.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g35.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g36.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g37.jpg",
+    },
+    {
+      logoUrl: "/assets/images/logo/g38.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g39.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g40.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g41.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g42.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g43.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g44.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g45.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g46.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g47.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g48.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g49.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g50.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g51.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g52.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g53.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g54.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g55.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g56.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g57.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g58.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g59.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g60.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g61.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g62.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g63.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g64.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g65.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g66.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g67.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g68.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g69.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g70.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g71.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g72.png",
+    },
+    {
+      logoUrl: "/assets/images/logo/g73.png",
+    },
+  ],
+};
