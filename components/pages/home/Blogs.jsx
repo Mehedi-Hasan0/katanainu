@@ -23,7 +23,7 @@ const Blogs = () => {
               key={i}
               className="rounded-xl border border-[#2a2a2a] hover:border-[#f5a238] transition duration-700 ease-in overflow-hidden"
             >
-              <Link href={"#"}>
+              <Link href={blog.href}>
                 <Image
                   src={blog.imgUrl}
                   alt="blogs image"
