@@ -97,7 +97,13 @@ const Navbar = () => {
                   className={`text-base 2xl:text-lg relative hover:text-[#f5a238] ${
                     i !== 0 && "nav-links"
                   }`}
-                  onMouseEnter={i === 0 ? handleFirstLinkHover : undefined}
+                  onMouseEnter={
+                    i === 0
+                      ? handleFirstLinkHover
+                      : () => {
+                          setIsFirstLinkHovered(false);
+                        }
+                  }
                 >
                   {link.label}
                 </Link>
