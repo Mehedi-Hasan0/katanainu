@@ -71,20 +71,26 @@ export default function BabyDogeNftPage() {
             will get 2 NFTs!
           </p>
           <span className="text-[#787878] text-xs sm:text-sm md:text-base flex flex-col gap-3">
-            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
               Supply:
             </p>
             10.000 Loot Boxes which include a Baby Doge Character NFT and a
             Weapons NFT in each Loot Box
           </span>
           <span className="text-[#787878] text-xs sm:text-sm md:text-base flex flex-col gap-3">
-            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
               Price:
             </p>
             $15 for whitelisted Wallets, $20 for whitelisted Wallets.
           </span>
           <span className="text-[#787878] text-xs sm:text-sm md:text-base flex flex-col gap-3">
-            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
+              Chain:
+            </p>
+            TBD
+          </span>
+          <span className="text-[#787878] text-xs sm:text-sm md:text-base flex flex-col gap-3">
+            <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
               Mint Date:
             </p>
             TBA

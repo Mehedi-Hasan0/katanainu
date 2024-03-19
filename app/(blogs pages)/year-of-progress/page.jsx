@@ -56,28 +56,28 @@ export default function YearProgress() {
             this year were:
           </p>
           <ul className="flex flex-col gap-3">
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] my-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] my-2 font-light list-none">
               Gaming Istanbul (Turkey)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               Mobidictum Conference (Turkey)
             </li>
             <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
               GToken 2049 (Singapore)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               Istanbul Blockchain Week 2023 (Turkey)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               NFT.khi (Pakistan)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               Blockchain Economy 2023 (Turkey)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               Coinfest Asia (Indonesia)
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] mb-2 font-light list-none">
               Scale Web3.0 (UAE)
             </li>
           </ul>
@@ -104,7 +104,7 @@ export default function YearProgress() {
 
         {/*  */}
         <ul className="flex flex-col md:flex-row mt-3">
-          <li className="flex-1 py-3 md:px-3">
+          <li className="flex-1 py-3 md:px-3 list-none">
             <iframe
               src="https://www.youtube.com/embed/2haLfdquhHk?si=8f1FaQ6BMl3mok9i?autoplay=0&iv_load_policy=0&loop=1&playsinline=1&controls=0&mute=1&origin=https://www.katanainu.com"
               frameborder="0"
@@ -115,7 +115,7 @@ export default function YearProgress() {
               className="aspect-video"
             />
           </li>
-          <li className="flex-1 py-3 md:px-3">
+          <li className="flex-1 py-3 md:px-3 list-none">
             <iframe
               src="https://www.youtube.com/embed/2ZHaCAA8KCE?si=dl_Tu4GFQ1fvOyOc?autoplay=0&iv_load_policy=0&loop=1&playsinline=1&controls=0&mute=1&origin=https://www.katanainu.com"
               frameborder="0"
@@ -185,10 +185,10 @@ export default function YearProgress() {
           </p>
 
           <ul>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] my-2 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] my-2 font-light list-none">
               Champion forging collection
             </li>
-            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] py-4 md:py-6 font-light">
+            <li className="text-gradient font-oswald text-sm sm:text-base md:text-lg tracking-[5px] py-4 md:py-6 font-light list-none">
               Katana Inu crusader sword collection (Free mint)
             </li>
           </ul>

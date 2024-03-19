@@ -75,7 +75,7 @@ const WhereToBuyToken = () => {
       <div className="overflow-hidden">
         <ul className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 items-center">
           {kataTokenStorePartner.map((store, i) => (
-            <li key={i} className="mx-4 my-2">
+            <li key={i} className="mx-4 my-2 list-none">
               <Link href={store.link}>
                 <Image
                   src={store.imgUrl}

@@ -7,8 +7,22 @@ import { footerLinks } from "@/constant";
 
 const Footer = () => {
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-    console.log("submitted");
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzeAbxFMf2EMhqDI4UOSRb7scAankyXCIp57WQmo0uqrCq8PlrzXBJ4FrWAYTyxBydU/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <footer className="section-padding bg-black border-b-2 border-[#ffb42f]">
@@ -28,7 +42,12 @@ const Footer = () => {
             Don&apos;t miss our latest news
           </h5>
           {/* form data */}
-          <form onSubmit={handleFormSubmit} className="flex items-center">
+          <form
+            onSubmit={(e) => {
+              handleFormSubmit(e);
+            }}
+            className="flex items-center form"
+          >
             <div className="bg-transparent rounded-full border border-[#414141] p-1">
               <label htmlFor="email">
                 <input
@@ -53,7 +72,7 @@ const Footer = () => {
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
               {footerLinks.game.map((link, i) => (
-                <li key={i}>
+                <li key={i} className=" list-none">
                   <Link
                     href={link.link}
                     target="_blank"
@@ -72,7 +91,7 @@ const Footer = () => {
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
               {footerLinks.contact.map((link, i) => (
-                <li key={i}>
+                <li key={i} className=" list-none">
                   <Link
                     href={link.link}
                     target="_blank"
@@ -91,7 +110,7 @@ const Footer = () => {
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
               {footerLinks.legal.map((link, i) => (
-                <li key={i}>
+                <li key={i} className=" list-none">
                   <Link
                     href={link.link}
                     target="_blank"

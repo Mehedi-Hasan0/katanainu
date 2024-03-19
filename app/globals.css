@@ -14,6 +14,16 @@ h3 {
   font-family: var(--font-grind);
 }
 
+ol {
+  list-style: decimal;
+  margin-left: 32px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 32px;
+}
+
 .access-key-options-1,
 .access-key-options-2,
 .access-key-options-3 {
@@ -215,6 +225,117 @@ h3 {
   );
   -webkit-text-fill-color: transparent;
 }
+
+/* ////// REACT QUILL EDITOR CSS////// */
+button:hover .ql-stroke,
+.ql-picker-label:hover .ql-stroke {
+  fill: none;
+  stroke: white !important;
+}
+
+.ql-active .ql-stroke {
+  fill: none;
+  stroke: white !important;
+}
+
+button:hover .ql-fill,
+.ql-picker-label:hover .ql-fill {
+  fill: white !important;
+  stroke: none;
+}
+
+.ql-active .ql-fill {
+  fill: white !important;
+  stroke: none;
+}
+
+/* /////// FONTS STYLE//////// */
+/* ///////// */
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=""]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=""]::before {
+  content: "Default";
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="poppins"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="poppins"]::before {
+  content: "Poppins";
+  font-family: var(--font-poppins);
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="oswald"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="oswald"]::before {
+  content: "Oswald";
+  font-family: var(--font-oswald);
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="grind"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="grind"]::before {
+  content: "Grind";
+  font-family: var(--font-grind);
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="jost"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="jost"]::before {
+  content: "Jost";
+  font-family: var(--font-jost);
+}
+
+/* Set content font-families */
+
+.ql-font-poppins {
+  font-family: var(--font-poppins);
+}
+
+.ql-font-oswald {
+  font-family: var(--font-oswald);
+}
+
+.ql-font-grind {
+  font-family: var(--font-grind);
+}
+
+.ql-font-jost {
+  font-family: var(--font-jost);
+}
+
+/*for font-size*/
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value]::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value]::before {
+  content: attr(data-value) !important;
+}
+
+/* ////EDITOR STYLES//// */
+
+.app {
+  margin: 1rem 4rem;
+}
+
+.app .ql-container {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.ql-editor {
+  overflow-y: scroll;
+  resize: vertical;
+  min-height: 24em;
+}
+
+.app .ql-snow.ql-toolbar {
+  display: block;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.quill > .ql-container .ql-editor.ql-blank::before {
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+
+/* ////// REACT QUILL EDITOR CSS////// */
 
 @media (1800px < width < 2400px) {
   .team-card .team-thumbnail img {

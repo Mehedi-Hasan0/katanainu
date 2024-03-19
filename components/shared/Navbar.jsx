@@ -86,7 +86,7 @@ const Navbar = () => {
             {navlinks.textLinks.map((link, i) => (
               <li
                 key={i}
-                className={`py-5 px-4 2xl:px-8 ${
+                className={`py-5 px-4 2xl:px-8 list-none ${
                   i === 0 && isFirstLinkHovered ? "relative" : ""
                 }`}
               >
@@ -117,7 +117,7 @@ const Navbar = () => {
                   }`}
                 >
                   {link.subMenu?.map((subM, i) => (
-                    <li key={i}>
+                    <li key={i} className=" list-none">
                       <Link
                         href={subM.path}
                         target={
@@ -144,7 +144,7 @@ const Navbar = () => {
           {/* social links */}
           <ul className="hidden sm:flex items-center gap-5 md:gap-10 mr-12 lg:mr-0">
             {navlinks.socialLinks.map((link, i) => (
-              <li key={i}>
+              <li key={i} className=" list-none">
                 <Link href={link.path} target="_blank">
                   <Image
                     width={16}
