@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import ArrowIcon from "@/components/shared/ArrowIcon";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { bannerButtonData } from "@/data";
 
 const Bannner = () => {
   return (
@@ -50,13 +52,36 @@ const Bannner = () => {
               <ArrowIcon />
             </Button>
           </Link>
-          <Button
-            variant="customAnimated"
-            className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
-          >
-            Purchase Token
-            <ArrowIcon />
-          </Button>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                variant="customAnimated"
+                className="flex items-center gap-2 min-w-[190px] text-sm sm:text-base"
+                key={2}
+              >
+                Purchase Token
+                <ArrowIcon />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="bg-[#0c0b0bc4] border-transparent p-12">
+              {/* <Button variant="customAnimated" className="w-full py-4" key={1}>
+                Mahedi
+              </Button> */}
+              {bannerButtonData.map((data, i) => (
+                <Link href={data.link} key={i} className="">
+                  <Button
+                    variant="customAnimated"
+                    className="w-full py-[22px] text-sm sm:text-base"
+                    key={i}
+                  >
+                    {data.label}
+                  </Button>
+                </Link>
+              ))}
+            </DialogContent>
+          </Dialog>
+
           <Link
             href={"https://play.katanainu.com/"}
             target="_blank"

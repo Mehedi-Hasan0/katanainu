@@ -1089,3 +1089,38 @@ export const partnersPageData = {
     },
   ],
 };
+
+export const bannerButtonData = [
+  {
+    label: "Uniswap",
+    link: "https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x2e85ae1C47602f7927bCabc2Ff99C40aA222aE15&chain=mainnet",
+  },
+  {
+    label: "Pancake Swap",
+    link: "https://pancakeswap.finance/swap?outputCurrency=0x6D6bA21E4C4b29CA7Bfa1c344Ba1E35B8DaE7205",
+  },
+  {
+    label: "Bitmart",
+    link: "https://www.bitmart.com/trade/en?symbol=KATA_USDT",
+  },
+  {
+    label: "Hotbit",
+    link: "https://www.hotbit.io/exchange?symbol=KATA_USDT",
+  },
+  {
+    label: "Probit",
+    link: "https://www.probit.com/app/exchange/KATA-USDT",
+  },
+  {
+    label: "DIGIFINEX",
+    link: "https://www.digifinex.com/en-ww/trade/USDT/KATA",
+  },
+  {
+    label: "MEXC",
+    link: "https://www.mexc.com/de-DE/exchange/KATA_USDT",
+  },
+  {
+    label: "Buy With Credit or master Card",
+    link: "https://pay.c14.money/?targetAssetIdLock=true&clientId=22aed5ca-f3fd-45a2-bd24-9e8b78c3842e&targetAssetId=e9acfbef-fbc7-41ce-9f01-6004c43d26a7",
+  },
+];
