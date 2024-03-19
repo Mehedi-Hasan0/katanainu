@@ -12,7 +12,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { FaPlay } from "react-icons/fa6";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Modal, ModalContent, ModalTrigger } from "@/components/ui/modal";
 
 const TrailerCarouosel = () => {
   const [innerWidth, setInnerWidth] = useState(
@@ -84,8 +84,8 @@ const TrailerCarouosel = () => {
                   Gameplay trailer
                 </h4>
 
-                <Dialog>
-                  <DialogTrigger asChild>
+                <Modal>
+                  <ModalTrigger asChild>
                     <span
                       className="absolute top-0 flex justify-center items-center w-full h-full"
                       onClick={() => {
@@ -96,9 +96,9 @@ const TrailerCarouosel = () => {
                         <FaPlay color="#000" size={playSvgSize} />
                       </span>
                     </span>
-                  </DialogTrigger>
-                  <DialogContent>{ytVideoUrl}</DialogContent>
-                </Dialog>
+                  </ModalTrigger>
+                  <ModalContent>{ytVideoUrl}</ModalContent>
+                </Modal>
               </div>
             </SwiperSlide>
           ))}
