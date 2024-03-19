@@ -4,8 +4,22 @@ import { Button } from "@/components/ui/button";
 
 const Newsletter = () => {
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-    console.log("submitted");
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzeAbxFMf2EMhqDI4UOSRb7scAankyXCIp57WQmo0uqrCq8PlrzXBJ4FrWAYTyxBydU/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <section className="main-container section-margin bg-[url('/assets/images/newsletter.png')] bg-no-repeat bg-cover bg-[45%_0%] relative">
@@ -20,7 +34,12 @@ const Newsletter = () => {
             Sign up to our newsletter
           </h2>
           {/* form data */}
-          <form onSubmit={handleFormSubmit} className="flex items-center">
+          <form
+            onSubmit={(e) => {
+              handleFormSubmit(e);
+            }}
+            className="flex items-center form"
+          >
             <div className="bg-transparent rounded-full border border-[#414141] p-1">
               <label htmlFor="email">
                 <input

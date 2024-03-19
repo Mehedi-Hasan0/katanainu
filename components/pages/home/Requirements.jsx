@@ -12,7 +12,10 @@ const Requirements = () => {
         <div className="flex flex-col md:flex-row gap-12 md:gap-14 lg:gap-24">
           <ul>
             {requiremnts.minimum.map((req, i) => (
-              <li key={i} className={`text-white flex items-start gap-1`}>
+              <li
+                key={i}
+                className={`text-white flex items-start gap-1 list-none`}
+              >
                 <span className="text-[#f9c306] mb-1">{req.label}:</span>
                 <span className="text-[#9b9898] text-center">{req.slug}</span>
               </li>
@@ -20,7 +23,10 @@ const Requirements = () => {
           </ul>
           <ul>
             {requiremnts.recomended.map((req, i) => (
-              <li key={i} className={`text-white flex items-start gap-1`}>
+              <li
+                key={i}
+                className={`text-white flex items-start gap-1 list-none`}
+              >
                 <span className="text-[#f9c306] mb-1">{req.label}:</span>
                 <span className="text-[#9b9898] text-center">{req.slug}</span>
               </li>

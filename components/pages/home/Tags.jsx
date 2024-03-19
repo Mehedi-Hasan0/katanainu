@@ -13,7 +13,7 @@ const Tags = () => {
             key={i}
             onMouseEnter={() => setActive(i)}
             onMouseLeave={() => setActive(-1)}
-            className={` text-sm sm:text-base md:text-lg capitalize  py-[6px] px-3 rounded-md font-jost transition-all duration-300 ease-in ${
+            className={` text-sm sm:text-base md:text-lg capitalize  py-[6px] px-3 rounded-md font-jost transition-all duration-300 ease-in list-none ${
               active === i
                 ? "bg-[#f9c306] text-black"
                 : "bg-[#12151b] text-white"

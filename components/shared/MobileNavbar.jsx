@@ -42,7 +42,7 @@ const MobileNavbar = () => {
               <Accordion key={i} type="single" collapsible>
                 <AccordionItem value={`item-${i}`}>
                   {/* menu */}
-                  <li className="border-t border-[#00000016]">
+                  <li className="border-t border-[#00000016] list-none">
                     <span className=" flex justify-between items-center pl-[25px] pr-[14px] py-[8px]">
                       <Link
                         href={link.path}
@@ -63,7 +63,7 @@ const MobileNavbar = () => {
                           link.subMenu.map((subLink, i) => (
                             <li
                               key={subLink.label}
-                              className=" pl-[25px] pr-[14px] py-3 border-t border-[#00000016]"
+                              className=" pl-[25px] pr-[14px] py-3 border-t border-[#00000016] list-none"
                             >
                               <Link
                                 href={subLink.path}
@@ -88,7 +88,7 @@ const MobileNavbar = () => {
           {/* social links */}
           <ul className="flex gap-5 justify-center items-center px-6 py-8">
             {navlinks.socialLinks.map((link, i) => (
-              <li key={i} className={i === 4 && "hidden"}>
+              <li key={i} className={`${i === 4 && "hidden"}  list-none`}>
                 <Link href={link.path} target="_blank">
                   <Image
                     width={16}

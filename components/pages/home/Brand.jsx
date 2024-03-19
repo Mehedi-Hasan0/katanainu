@@ -39,7 +39,7 @@ const Brand = () => {
             {aboutKatanaInu.map((li, i) => (
               <li
                 key={i}
-                className="flex items-start gap-2 py-3 font-medium text-[#e7e7e7]"
+                className="flex items-start gap-2 py-3 font-medium text-[#e7e7e7] list-none"
               >
                 <span className="w-4">
                   <FaCircleArrowRight
