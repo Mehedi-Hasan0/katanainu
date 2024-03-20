@@ -53,7 +53,7 @@ export default function Blogs() {
               {firstBlog.date}
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-              {firstBlog.greetings}
+              {firstBlog.description}
             </p>
           </div>
         </div>
