@@ -9,6 +9,7 @@ import Image from "next/image";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import Loader from "../shared/Loader";
+import DOMPurify from "dompurify";
 
 export default function CreateBlogPage() {
   const [blogData, setBlogData] = useState({
@@ -149,9 +150,11 @@ export default function CreateBlogPage() {
   };
 
   const handleBlogUpload = async (data) => {
+    // Sanitize editorValue using DOMPurify
+    const sanitizedContent = DOMPurify.sanitize(editorValue);
     let blogData = {
       ...data,
-      content: editorValue,
+      content: sanitizedContent,
     };
     try {
       setLoading(true);
