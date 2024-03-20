@@ -147,6 +147,30 @@ export const chooseHero = [
     heroImgUrl: "/assets/images/hero4.webp",
     heroName: "KatanaInu",
   },
+  {
+    heroImgUrl: "/assets/images/hero5.webp",
+    heroName: "Baby Doge",
+  },
+  {
+    heroImgUrl: "/assets/images/hero6.webp",
+    heroName: "Samurai",
+  },
+  {
+    heroImgUrl: "/assets/images/hero7.webp",
+    heroName: "Shibanu",
+  },
+  {
+    heroImgUrl: "/assets/images/hero8.webp",
+    heroName: "BabyDoge Moon",
+  },
+  {
+    heroImgUrl: "/assets/images/hero9.webp",
+    heroName: "OKX",
+  },
+  {
+    heroImgUrl: "/assets/images/hero10.webp",
+    heroName: "Polygone",
+  },
 ];
 
 export const coinkataData = [
