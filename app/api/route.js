@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   await connectMongoDB();
   return NextResponse.json(
-    { message: "Product created successfully" },
+    { message: "Welcome to KatanaInu" },
     { status: 200 }
   );
 }

@@ -6,20 +6,24 @@ import "react-quill/dist/quill.snow.css";
 import { Button } from "../ui/button";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import Loader from "../shared/Loader";
 
 export default function CreateBlogPage() {
   const [blogData, setBlogData] = useState({
-    imageUrl: "",
+    imgUrl: "",
     title: "",
-    Date: "",
-    description: "",
+    date: "",
+    desc: "",
     greetings: "Hello Katafam,",
   });
   const [editorValue, setEditorValue] = useState("");
   const quillRef = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   /////////
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   // Add fonts to whitelist
   let Font = Quill.import("formats/font");
@@ -144,14 +148,37 @@ export default function CreateBlogPage() {
     }));
   };
 
-  const handleBlogUpload = (data) => {
+  const handleBlogUpload = async (data) => {
     let blogData = {
       ...data,
       content: editorValue,
     };
+    try {
+      setLoading(true);
+      const blogResponse = await axios.post("/api/create-blog", blogData, {
+        headers: { "Content-Type": "application/json" },
+      });
+      console.log(blogResponse, "blog response");
+      if (
+        blogResponse.status === 200 ||
+        blogResponse.status === 202 ||
+        blogResponse.data.status === 200
+      ) {
+        setLoading(false);
+        toast.success(`${blogResponse.data.message}`);
+        reset(); // reset form value
+        setTimeout(() => {
+          window.location.reload();
+        }, 700);
+      }
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+      toast.error("Something went wrong. Try again!");
+    } finally {
+      setLoading(false);
+    }
   };
-
-  console.log(editorValue);
   return (
     <div className="main-container section-margin text-white">
       <form
@@ -232,8 +259,12 @@ export default function CreateBlogPage() {
 
         {/* save btn */}
         <div className="mt-8 flex justify-center items-center">
-          <Button variant="customAnimated" className="py-5 min-w-[300px]">
-            Save Blog
+          <Button
+            disabled={loading}
+            variant="customAnimated"
+            className="py-5 min-w-[300px] disabled:cursor-not-allowed"
+          >
+            {loading ? <Loader /> : "Create Blog"}
           </Button>
         </div>
       </form>
@@ -241,9 +272,9 @@ export default function CreateBlogPage() {
       {/* ////////// PREVIEW /////////// */}
       <h1 className="mt-20">Preview</h1>
       <div className="flex flex-col gap-3 sm:gap-5 mt-10">
-        {blogData.imageUrl && (
+        {blogData.imgUrl && (
           <Image
-            src={blogData.imageUrl}
+            src={blogData.imgUrl}
             alt="baby doge"
             width={1230}
             height={284}
@@ -255,13 +286,13 @@ export default function CreateBlogPage() {
             {blogData.title}
           </h2>
           <p className="text-gradient font-oswald text-sm sm:text-base md:text-lg font-light tracking-[5px]">
-            {blogData.Date}
+            {blogData.date}
           </p>
           <strong className="text-white text-xs sm:text-sm md:text-base">
             {blogData.greetings}
           </strong>
           <p className="text-[#787878] text-xs sm:text-sm md:text-base">
-            {blogData.description}
+            {blogData.desc}
           </p>
         </div>
       </div>
