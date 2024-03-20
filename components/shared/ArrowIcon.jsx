@@ -13,7 +13,7 @@ const ArrowIcon = () => {
     }
   }, [screenSize]);
 
-  console.log(screenSize, "screen");
+  // console.log(screenSize, "screen");
 
   return (
     <>

@@ -5,7 +5,9 @@ import dynamic from "next/dynamic";
 
 const CreateBlogPage = dynamic(
   () =>
-    import("../../components/pages/CreateBlogPage").then((mod) => mod.default),
+    import("../../components/pages/blogs/CreateBlogPage").then(
+      (mod) => mod.default
+    ),
   { ssr: false, loading: () => <Loader /> }
 );
 
