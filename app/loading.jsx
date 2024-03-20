@@ -1,9 +1,13 @@
 "use client";
 
-import Loader from "@/components/shared/Loader";
+import { PulseLoader } from "react-spinners";
 
 const loading = () => {
-  return <Loader />;
+  return (
+    <div className="w-screen h-screen overflow-hidden flex justify-center items-center">
+      <PulseLoader color="#ffc306" size={15} speedMultiplier={0.6} />
+    </div>
+  );
 };
 
 export default loading;
