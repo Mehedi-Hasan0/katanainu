@@ -38,7 +38,7 @@ export default function About() {
                 players, regular art dealers, and gamers from other NFT
                 projects.
               </p>
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex justify-center items-center gap-2 flex-wrap my-4 md:my-2">
                 <Link
                   href={"https://nft.katanainu.com/"}
                   target="_blank"
