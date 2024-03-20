@@ -42,14 +42,16 @@ export default function Blogs() {
               alt={firstBlog.title}
               width={553}
               height={300}
-              className="object-cover md:object-fill h-[300px] rounded-lg md:mx-2"
+              className="object-fill h-[300px] rounded-lg md:mx-2"
             />
           </Link>
-          <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-[58%] md:mx-2 mt-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-jost text-white font-semibold hover:text-[#f5a238] transition duration-500 ease-in-out text-center md:text-start">
-              <Link href={firstBlog.link}>{firstBlog.title}</Link>
+          <div className="flex flex-col items-start gap-3 w-full md:w-[58%] md:mx-2 mt-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] font-jost text-white font-semibold hover:text-[#f5a238] transition duration-500 ease-in-out text-left md:text-start">
+              <Link href={firstBlog.link} className="text-left">
+                {firstBlog.title}
+              </Link>
             </h2>
-            <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light">
+            <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light text-left">
               {firstBlog.date}
             </p>
             <p className="text-[#787878] text-xs sm:text-sm md:text-base">
@@ -83,8 +85,8 @@ export default function Blogs() {
                     {blog.title}
                   </Link>
                 </h2>
-                <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light mb-2 tracking-widest">
-                  {firstBlog.date}
+                <p className="text-gradient font-oswald text-xs sm:text-sm md:text-base lg:text-lg font-light mb-2 tracking-[5px]">
+                  {blog.date}
                 </p>
                 <p className="px-3 text-center pb-4 text-sm md:text-base text-[#787878]">
                   {blog.description.slice(0, 330)}...

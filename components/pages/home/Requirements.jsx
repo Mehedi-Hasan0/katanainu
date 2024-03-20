@@ -17,7 +17,7 @@ const Requirements = () => {
                 className={`text-white flex items-start gap-1 list-none`}
               >
                 <span className="text-[#f9c306] mb-1">{req.label}:</span>
-                <span className="text-[#9b9898] text-center">{req.slug}</span>
+                <span className="text-[#9b9898] text-left">{req.slug}</span>
               </li>
             ))}
           </ul>
@@ -28,7 +28,7 @@ const Requirements = () => {
                 className={`text-white flex items-start gap-1 list-none`}
               >
                 <span className="text-[#f9c306] mb-1">{req.label}:</span>
-                <span className="text-[#9b9898] text-center">{req.slug}</span>
+                <span className="text-[#9b9898] text-left">{req.slug}</span>
               </li>
             ))}
           </ul>
