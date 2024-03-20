@@ -300,7 +300,10 @@ export default function CreateBlogPage() {
         </div>
       </div>
 
-      <div className="mt-5" dangerouslySetInnerHTML={{ __html: editorValue }} />
+      <div
+        className="mt-5 blogContent"
+        dangerouslySetInnerHTML={{ __html: editorValue }}
+      />
     </div>
   );
 }

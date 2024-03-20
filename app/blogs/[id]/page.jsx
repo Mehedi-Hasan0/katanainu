@@ -72,7 +72,7 @@ export default function SingleBlogPage() {
               )}
             </span>
             <div
-              className=""
+              className="blogContent"
               dangerouslySetInnerHTML={{ __html: blogData.content }}
             />
           </div>

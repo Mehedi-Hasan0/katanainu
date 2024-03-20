@@ -214,6 +214,10 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+.blogContent img {
+  width: 100%;
+}
+
 /* ////// REACT QUILL EDITOR CSS////// */
 button:hover .ql-stroke,
 .ql-picker-label:hover .ql-stroke {
