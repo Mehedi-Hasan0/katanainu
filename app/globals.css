@@ -85,18 +85,6 @@ ul {
   margin-left: 0%;
 }
 
-.access-key-video-container::before {
-  content: "";
-  position: absolute;
-  left: -125px;
-  top: -25%;
-  background-image: url(/assets/images/download_shape.png);
-  width: 360px;
-  height: 861px;
-  z-index: -1;
-  pointer-events: none;
-}
-
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -475,6 +463,18 @@ button:hover .ql-fill,
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+  }
+
+  .access-key-video-container::before {
+    content: "";
+    position: absolute;
+    left: -125px;
+    top: -25%;
+    background-image: url(/assets/images/download_shape.png);
+    width: 440px;
+    height: 861px;
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
