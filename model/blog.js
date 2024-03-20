@@ -2,6 +2,25 @@ import mongoose, { Schema } from "mongoose";
 
 const blogSchema = new Schema(
   {
+    imageUrl: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    Date: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+    },
+    greetings: {
+      type: String,
+      required: true,
+    },
     content: {
       type: String,
       required: true,

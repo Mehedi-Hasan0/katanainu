@@ -29,7 +29,7 @@ const Blog = () => {
       imageFormData.append("cloud_name", cloudName);
 
       try {
-        fetch(`https://api.cloudinary.com/v1_1/${cloudName}/video/upload`, {
+        fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
           method: "POST",
           body: imageFormData,
         })
