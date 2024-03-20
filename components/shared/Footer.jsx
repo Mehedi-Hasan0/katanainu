@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 w-full">
           {/* fotter links */}
           <div>
-            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6">
+            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6 ml-8">
               Game
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
@@ -86,7 +86,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6">
+            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6 ml-8">
               Contact
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
@@ -105,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6">
+            <h5 className="font-jost text-white uppercase text-base mb-4 sm:mb-6 ml-8">
               Legal
             </h5>
             <ul className="flex flex-col gap-4 sm:gap-6">
