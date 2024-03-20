@@ -3,12 +3,12 @@
 import { useMemo, useRef, useState } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 import { useForm } from "react-hook-form";
 import Image from "next/image";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import Loader from "../shared/Loader";
+import Loader from "../../shared/Loader";
 import DOMPurify from "dompurify";
 
 export default function CreateBlogPage() {
@@ -161,7 +161,7 @@ export default function CreateBlogPage() {
       const blogResponse = await axios.post("/api/create-blog", blogData, {
         headers: { "Content-Type": "application/json" },
       });
-      console.log(blogResponse, "blog response");
+      // console.log(blogResponse, "blog response");
       if (
         blogResponse.status === 200 ||
         blogResponse.status === 202 ||

@@ -4,7 +4,9 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   await connectMongoDB();
-  return NextResponse.json({ message: "GET all blogs data" }, { status: 200 });
+  const allBlogs = await Blog.find();
+
+  return NextResponse.json({ allBlogs }, { status: 200 });
 }
 
 export async function POST(req) {
