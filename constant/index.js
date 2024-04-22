@@ -17,8 +17,8 @@ export const navlinks = {
           path: "/ranking",
         },
         {
-          label: "Lore/Back Story",
-          path: "/lorestory",
+          label: "Lore",
+          path: "/lore",
         },
         {
           label: "Factions Summary",

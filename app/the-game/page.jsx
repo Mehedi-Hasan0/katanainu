@@ -15,7 +15,7 @@ export default function TheGame() {
           <div className="mt-10 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 flex flex-col md:flex-row items-start">
             {/* 1st container */}
             <div className="flex flex-col flex-1 px-4 py-4 md:py-0">
-              <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6 text-center">
+              <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6">
                 Katana Inu Game
               </h3>
               <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
@@ -30,7 +30,7 @@ export default function TheGame() {
             {/* 2nd container */}
             <div className="flex-1 px-4 py-4 md:py-0">
               <div className="flex flex-col flex-1 px-4 py-4 md:py-0">
-                <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6 text-center">
+                <h3 className="font-grind uppercase text-xl sm:text-2xl md:text-3xl text-white mb-4 md:mb-6">
                   Game Modes
                 </h3>
                 <p className="text-[#e7e7e7] text-xs md:text-sm leading-5 md:leading-7 text-justify mb-2 md:mb-4">
