@@ -26,7 +26,7 @@ const Requirements = () => {
               </li>
             ))}
           </ul>
-          <ul>
+          <ul className="ml-0">
             <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
               Suggested System Requirements
             </span>
