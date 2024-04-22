@@ -94,7 +94,7 @@ const Navbar = () => {
                   href={link.path}
                   target={i === 1 || i === 2 ? "_blank" : "_parent"}
                   rel="noreferer"
-                  className={`text-base 2xl:text-lg relative hover:text-[#f5a238] ${
+                  className={`text-base 2xl:text-lg relative hover:text-[#f5a238] font-medium ${
                     i !== 0 && "nav-links"
                   }`}
                   onMouseEnter={

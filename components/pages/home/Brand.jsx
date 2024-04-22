@@ -8,14 +8,14 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 const Brand = () => {
   return (
     <div className="text-white main-container">
-      <div className="flex items-center justify-center gap-5 sm:gap-8 xl:gap-10 py-6 ">
+      <div className="flex items-center justify-center gap-5 sm:gap-8 xl:gap-12 2xl:gap-20 py-6 ">
         {brandLinks.map((brand, i) => (
           <Link
             key={i}
             href={brand.linkPath}
             target={brand.linkPath.length !== 1 ? "_blank" : "_parent"}
           >
-            <Image src={brand.imgPath} alt="" width={210} height={82} />
+            <Image src={brand.imgPath} alt="" width={250} height={82} />
           </Link>
         ))}
       </div>
@@ -31,11 +31,11 @@ const Brand = () => {
         </div>
 
         {/* texts */}
-        <div className="flex-1">
+        <div className="flex-1 py-10">
           <h2 className="text-lg md:text-xl xl:text-2xl text-[#f5a238] pb-4 sm:pb-6">
             About katana inu
           </h2>
-          <ul>
+          <ul className="ml-0">
             {aboutKatanaInu.map((li, i) => (
               <li
                 key={i}
@@ -54,7 +54,7 @@ const Brand = () => {
           </ul>
 
           {/* btn */}
-          <div className="flex flex-wrap 2xl:flex-nowrap items-center justify-center gap-3 pt-2 mx-5">
+          <div className="flex flex-wrap 2xl:flex-nowrap items-center justify-between gap-3 pt-2 2xl:pt-4 mx-1">
             <Link
               href={"https://twitter.com/katanainu"}
               target="_blank"
@@ -62,7 +62,7 @@ const Brand = () => {
             >
               <Button
                 variant="customAnimated"
-                className="min-w-[180px] text-[12px] font-semibold uppercase"
+                className="min-w-[190px] text-[12px] font-bold uppercase"
               >
                 follow us on twitter
               </Button>
@@ -70,7 +70,7 @@ const Brand = () => {
             <Link href={"https://discord.com/invite/katanainu"}>
               <Button
                 variant="customAnimated"
-                className="min-w-[180px] text-[12px] font-semibold uppercase"
+                className="min-w-[190px] text-[12px] font-bold uppercase"
               >
                 Join our discord
               </Button>
@@ -78,7 +78,7 @@ const Brand = () => {
             <Link href={"#"} target="_blank" rel="norefferer">
               <Button
                 variant="customAnimated"
-                className="min-w-[180px] text-[12px] font-semibold uppercase"
+                className="min-w-[190px] text-[12px] font-bold uppercase"
               >
                 Sign up to newsletter
               </Button>

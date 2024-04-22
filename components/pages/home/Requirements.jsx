@@ -10,24 +10,34 @@ const Requirements = () => {
 
         {/* data */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-14 lg:gap-24">
-          <ul>
+          <ul className="ml-0">
+            <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
+              Minimum System Requirements
+            </span>
             {requiremnts.minimum.map((req, i) => (
               <li
                 key={i}
-                className={`text-white flex items-start gap-1 list-none`}
+                className={`text-white flex items-start gap-1 list-none 2xl:text-lg`}
               >
-                <span className="text-[#f9c306] mb-1">{req.label}:</span>
+                <span className="text-[#f9c306] mb-1 font-bold">
+                  {req.label}:
+                </span>
                 <span className="text-[#9b9898] text-left">{req.slug}</span>
               </li>
             ))}
           </ul>
           <ul>
+            <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
+              Suggested System Requirements
+            </span>
             {requiremnts.recomended.map((req, i) => (
               <li
                 key={i}
-                className={`text-white flex items-start gap-1 list-none`}
+                className={`text-white flex items-start gap-1 list-none 2xl:text-lg`}
               >
-                <span className="text-[#f9c306] mb-1">{req.label}:</span>
+                <span className="text-[#f9c306] mb-1 font-bold">
+                  {req.label}:
+                </span>
                 <span className="text-[#9b9898] text-left">{req.slug}</span>
               </li>
             ))}

@@ -22,7 +22,7 @@ const Newsletter = () => {
       });
   };
   return (
-    <section className="main-container section-margin bg-[url('/assets/images/newsletter.png')] bg-no-repeat bg-cover bg-[45%_0%] relative">
+    <section className="main-container my-32 xl:my-44 bg-[url('/assets/images/newsletter.png')] bg-no-repeat bg-cover bg-[45%_0%] relative bg-black">
       {/* overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/70 sm:bg-black/20 block md:hidden" />
       <div className="flex justify-center sm:justify-end py-14 sm:pl-7 sm:mr-3 relative z-[1]">

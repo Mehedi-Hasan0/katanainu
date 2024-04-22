@@ -25,8 +25,8 @@ const Footer = () => {
       });
   };
   return (
-    <footer className="section-padding bg-black border-b-2 border-[#ffb42f]">
-      <section className="main-container flex flex-col md:flex-row gap-10 justify-between">
+    <footer className=" bg-black border-b-2 border-[#ffb42f]">
+      <section className="main-container flex flex-col md:flex-row gap-10 justify-between py-16 xl:py-24">
         {/* logo */}
         <div className="flex flex-col mb-10 md:mb-0 min-w-[325px]">
           <Link href={"/"}>
@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <div className="section-margin py-6 sm:py-8 md:py-10lg:py-12 text-sm font-medium text-white text-center font-jost">
+      <div className="py-6 sm:py-8 md:py-10lg:py-12 text-sm font-medium text-white text-center font-jost">
         All rights reserved by{" "}
         <span className="text-[#f3a511]">Chainvision Games</span>
       </div>

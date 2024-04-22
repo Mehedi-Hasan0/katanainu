@@ -22,6 +22,10 @@ const ChoosePlayer = () => {
   const [slidePerView, setSlidePerView] = useState(
     typeof window !== "undefined" && (window.innerWidth < 640 ? 1 : 2)
   );
+  const [carouselDepth, setCarouselDepth] = useState(
+    typeof window !== "undefined" &&
+      (window.innerWidth < 640 ? 2.5 : window.innerWidth < 768 ? 3.5 : 4)
+  );
 
   useEffect(() => {
     import("swiper").then((SwiperModule) => {
@@ -34,6 +38,9 @@ const ChoosePlayer = () => {
     const carouselSettingsOnWindowWidth = () => {
       setCarouselSpace(
         window.innerWidth < 640 ? 20 : window.innerWidth < 768 ? 80 : 200
+      );
+      setCarouselDepth(
+        window.innerWidth < 640 ? 2.5 : window.innerWidth < 768 ? 3.5 : 4
       );
       setSlidePerView(window.innerWidth < 640 ? 1 : 2);
     };
@@ -76,10 +83,11 @@ const ChoosePlayer = () => {
               slidesPerView={slidePerView}
               spaceBetween={carouselSpace}
               coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2.5,
+                rotate: 0, // Slide rotate in degrees
+                stretch: 0, // Stretch space between slides (in px)
+                depth: 100, // Depth offset in px (slides translate in Z axis)
+                modifier: carouselDepth, // Effect multipler
+                slideShadows: false, // Enables slides shadows
               }}
             >
               {chooseHero.map((hero, i) => (

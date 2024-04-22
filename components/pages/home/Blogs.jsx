@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Blogs = () => {
   return (
-    <section className="section-padding relative mb-32 xl:mb-44">
+    <section className="relative mb-32 xl:mb-44 ">
       <div className="main-container text-white flex flex-col gap-16 lg:gap-24">
         {/* heading */}
         <div className="flex flex-col gap-3 md:gap-5 justify-center items-center">
@@ -21,7 +21,7 @@ const Blogs = () => {
           {blogsStaticData.map((blog, i) => (
             <div
               key={i}
-              className="rounded-xl border border-[#2a2a2a] hover:border-[#f5a238] transition duration-700 ease-in overflow-hidden"
+              className="rounded-xl border border-[#2a2a2a] hover:border-[#f5a238] transition duration-700 ease-in overflow-hidden pb-3"
             >
               <Link href={blog.href}>
                 <Image
