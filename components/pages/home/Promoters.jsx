@@ -14,7 +14,7 @@ const Promoters = () => {
         <h5 className="uppercase text-gradient font-bold text-xl sm:text-2xl md:text-3xl font-jost text-center">
           Influencer celebrities
         </h5>
-        <h2 className="uppercase text-2xl sm:text-3xl md:text-4x lg:text-[38px] text-white font-jost font-bold italic text-center">
+        <h2 className="uppercase text-2xl sm:text-3xl md:text-4x lg:text-[38px] text-white font-jost font-bold text-center">
           Who promoted katana inu
         </h2>
       </div>

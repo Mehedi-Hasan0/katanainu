@@ -7,11 +7,11 @@ const GamePartner = () => {
   return (
     <div className="flex flex-col my-8 sm:my-10 md:my-[50px]">
       <div className="flex flex-col justify-center items-center text-center mb-4 md:mb-6">
-        <h2 className="font-jost text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase font-bold text-center mb-5 italic">
+        <h2 className="font-jost text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase font-bold text-center mb-5">
           Game partners
         </h2>
         <p className="text-xs sm:text-sm md:text-base text-white/40">
-          Katana Inu has partnered with the following companies.
+          Katana Inu has partnered with the following companies
         </p>
       </div>
 

@@ -17,10 +17,10 @@ const TokenOverview = () => {
         </h2>
         <span className="mt-3">
           <p className="text-white/40 text-sm md:text-base lg:text-lg text-center leading-7 max-w-[840px]">
-            $KATA Token is the primary in-game currency in Katana Inu. You will
+            The $KATA Token is Katana Inu’s primary in-game currency. You will
             be able to buy in-game items, pay tournaments entry fees and get
-            offers on trading fees. To take advantage of the Play&Earn system in
-            game, you will need to hold $KATA.
+            offers on trading fees. To take advantage of the Play & Earn system
+            in game, you will need to hold $KATA.
           </p>
         </span>
       </div>

@@ -1,16 +1,12 @@
 export const navlinks = {
   textLinks: [
     {
-      label: "About",
-      path: "/about",
+      label: "Game",
+      path: "#",
       subMenu: [
         {
-          label: "The game",
-          path: "/the-game",
-        },
-        {
-          label: "Team",
-          path: "/team",
+          label: "About the game",
+          path: "/about-the-game",
         },
         {
           label: "Ranking",
@@ -23,6 +19,16 @@ export const navlinks = {
         {
           label: "Factions Summary",
           path: "/facsummary",
+        },
+      ],
+    },
+    {
+      label: "Learn more",
+      path: "#",
+      secondSubMenu: [
+        {
+          label: "Who are we (team)",
+          path: "/team",
         },
         {
           label: "Roadmap 2",
@@ -113,19 +119,23 @@ export const brandLinks = [
 export const sliderImg = [
   {
     imgUrl: "/assets/images/slider-img-1.webp",
-    youtubeUrl: "7nykO0FzsVQ",
+    youtubeUrl: "TKKWnzLZMKo",
+    footerLabel: "Katana Inu Multiplayer On-Chain Action Game",
   },
   {
     imgUrl: "/assets/images/slider-img-2.webp",
-    youtubeUrl: "E694jJeE_EE",
+    youtubeUrl: "7nykO0FzsVQ",
+    footerLabel: "Protect The Moon From Enemies | Cinematic Trailer",
   },
   {
     imgUrl: "/assets/images/slider-img-3.webp",
-    youtubeUrl: "9c7pDf-WFAk",
+    youtubeUrl: "E694jJeE_EE",
+    footerLabel: "Ready to Fight for NFTs? | Cinematic Trailer",
   },
   {
     imgUrl: "/assets/images/slider-img-4.webp",
-    youtubeUrl: "TKKWnzLZMKo",
+    youtubeUrl: "9c7pDf-WFAk",
+    footerLabel: "Early Development In-Game Footage",
   },
 ];
 

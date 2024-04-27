@@ -64,7 +64,7 @@ const Brand = () => {
                 variant="customAnimated"
                 className="min-w-[190px] text-[12px] font-bold uppercase"
               >
-                follow us on twitter
+                follow us on x
               </Button>
             </Link>
             <Link href={"https://discord.com/invite/katanainu"}>
@@ -75,12 +75,16 @@ const Brand = () => {
                 Join our discord
               </Button>
             </Link>
-            <Link href={"#"} target="_blank" rel="norefferer">
+            <Link
+              href={"https://t.me/katanainu"}
+              target="_blank"
+              rel="norefferer"
+            >
               <Button
                 variant="customAnimated"
                 className="min-w-[190px] text-[12px] font-bold uppercase"
               >
-                Sign up to newsletter
+                Sign up to telegram
               </Button>
             </Link>
           </div>

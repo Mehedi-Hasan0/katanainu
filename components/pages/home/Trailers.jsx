@@ -10,8 +10,8 @@ const Trailers = () => {
             <h5 className="uppercase text-gradient font-bold tracking-[2px] text-lg md:text-xl lg:text-2xl font-jost">
               Katana inu
             </h5>
-            <h2 className="uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-white font-jost font-bold italic">
-              Trailers
+            <h2 className="uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-white font-jost font-bold">
+              MEDIA
             </h2>
           </div>
 

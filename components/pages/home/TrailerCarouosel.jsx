@@ -80,8 +80,8 @@ const TrailerCarouosel = () => {
                   height={431}
                   className="border border-[#f5a238] xl:w-full"
                 />
-                <h4 className="font-jost text-xl sm:text-3xl uppercase text-white font-bold text-center pt-2 sm:pt-5">
-                  Gameplay trailer
+                <h4 className="font-jost text-xs sm:text-lg lg:text-xl 2xl:text-2xl uppercase text-white font-bold text-center pt-2 sm:pt-5">
+                  {slider.footerLabel}
                 </h4>
 
                 <Modal>

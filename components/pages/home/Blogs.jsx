@@ -8,7 +8,7 @@ const Blogs = () => {
       <div className="main-container text-white flex flex-col gap-16 lg:gap-24">
         {/* heading */}
         <div className="flex flex-col gap-3 md:gap-5 justify-center items-center">
-          <h2 className="text-heading-2 uppercase italic  font-jost font-semibold">
+          <h2 className="text-heading-2 uppercase font-jost font-semibold">
             Katana inu news
           </h2>
           <p className="text-sm md:text-base lg:text-lg text-center mx-10 sm:mx-0">
