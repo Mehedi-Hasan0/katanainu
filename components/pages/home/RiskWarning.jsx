@@ -11,12 +11,12 @@ const RiskWarning = () => {
   };
   return (
     <div className="flex flex-col justify-center items-center mt-8 sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24">
-      <h2 className="font-jost text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase font-bold text-center mb-7 sm:mb-9 md:mb-11 lg:mb-12 italic">
+      <h2 className="font-jost text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase font-bold text-center mb-7 sm:mb-9 md:mb-11 lg:mb-12">
         Risk warning
       </h2>
       <p className="text-[#d3d3d3] text-xs sm:text-sm md:text-base text-center max-w-[940px]">
-        Cryptocurrency trading is subject to high market risk. Please make you
-        always trade cautiously.{" "}
+        Cryptocurrency trading is subject to high market risk. Please make sure
+        you always trade cautiously.{" "}
         <span className={showFullText ? "inline" : "hidden"}>
           Be advised that Katana Inu is not responsible for your trading losses.
           You are solely responsible for determining whether any investment,

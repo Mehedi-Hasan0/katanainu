@@ -63,7 +63,7 @@ const ChoosePlayer = () => {
           <h5 className="uppercase text-gradient tracking-[2px] text-base sm:text-2xl md:text-3xl font-jost font-bold">
             Ready to play?
           </h5>
-          <h2 className="text-lg sm:text-4xl md:text-6xl text-white font-jost font-bold italic">
+          <h2 className="text-lg sm:text-4xl md:text-6xl text-white font-jost font-bold ">
             Choose your warrior
           </h2>
         </div>

@@ -1,9 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import toast from "react-hot-toast";
 
 const Newsletter = () => {
   const handleFormSubmit = (e) => {
+    e.preventDefault();
+
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
     fetch(
@@ -14,11 +17,13 @@ const Newsletter = () => {
       }
     )
       .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-      })
+      .then((data) => {})
       .catch((error) => {
         console.log(error);
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 300);
       });
   };
   return (
@@ -27,7 +32,7 @@ const Newsletter = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/70 sm:bg-black/20 block md:hidden" />
       <div className="flex justify-center sm:justify-end py-14 sm:pl-7 sm:mr-3 relative z-[1]">
         <div className="flex flex-col gap-1 xl:gap-2">
-          <h3 className="italic text-[#f9c306] text-xl md:text-2xl lg:text-3xl 2xl:text-[34px] font-medium font-jost uppercase">
+          <h3 className="text-[#f9c306] text-xl md:text-2xl lg:text-3xl 2xl:text-[34px] font-medium font-jost uppercase">
             Join our Journey
           </h3>
           <h2 className="font-semibold text-white text-heading-2 font-jost uppercase">

@@ -5,7 +5,7 @@ export default function TheGame() {
         <div className="main-container">
           <div className="flex flex-col justify-center items-center gap-2">
             <h5 className="uppercase font-jost font-bold text-gradient text-xl sm:text-2xl md:text-3xl">
-              The game
+              the game
             </h5>
             <h2 className=" max-w-[900px] text-2xl sm:text-3xl md:text-4xl lg:text-[38px] text-center uppercase font-jost text-white font-bold">
               Play to earn ecosystem

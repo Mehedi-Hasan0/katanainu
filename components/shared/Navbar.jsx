@@ -12,6 +12,8 @@ const Navbar = () => {
   const [showScrollNav, setShowScrollNav] = useState(false);
   const [isFirstLinkHovered, setIsFirstLinkHovered] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(-1);
+  const [isSecondLinkHovered, setIsSecondLinkHovered] = useState(false);
+  const [activeSecondSubMenu, setActiveSecondSubMenu] = useState(-1);
   const subMenuRef = useRef(null);
 
   const pathName = usePathname();
@@ -23,6 +25,26 @@ const Navbar = () => {
   const handleFirstLinkMouseLeave = () => {
     setIsFirstLinkHovered(false);
     setActiveSubMenu(false);
+  };
+
+  const handleSecondLinkHover = () => {
+    setIsSecondLinkHovered(true);
+  };
+
+  const handleSecondLinkMouseLeave = () => {
+    setIsSecondLinkHovered(false);
+    setActiveSecondSubMenu(false);
+  };
+
+  const handleListMouseLeave = (i) => {
+    if (i === 0) {
+      handleFirstLinkMouseLeave();
+    } else if (i === 1) {
+      handleSecondLinkMouseLeave();
+    } else {
+      handleFirstLinkMouseLeave();
+      handleSecondLinkMouseLeave();
+    }
   };
 
   useEffect(() => {
@@ -46,6 +68,7 @@ const Navbar = () => {
     const handleClickOutside = (event) => {
       if (subMenuRef.current && !subMenuRef.current.contains(event.target)) {
         setIsFirstLinkHovered(false);
+        setIsSecondLinkHovered(false);
       }
     };
 
@@ -86,22 +109,29 @@ const Navbar = () => {
             {navlinks.textLinks.map((link, i) => (
               <li
                 key={i}
+                onMouseLeave={() => handleListMouseLeave(i)}
                 className={`py-5 px-4 2xl:px-8 list-none ${
-                  i === 0 && isFirstLinkHovered ? "relative" : ""
+                  (i === 0 && isFirstLinkHovered) ||
+                  (i === 1 && isSecondLinkHovered)
+                    ? "relative"
+                    : ""
                 }`}
               >
                 <Link
                   href={link.path}
-                  target={i === 1 || i === 2 ? "_blank" : "_parent"}
-                  rel="noreferer"
+                  target={i === 2 || i === 3 ? "_blank" : "_parent"}
+                  rel="noreferrer"
                   className={`text-base 2xl:text-lg relative hover:text-[#f5a238] font-medium ${
-                    i !== 0 && "nav-links"
+                    i !== 0 && i !== 1 && "nav-links"
                   }`}
                   onMouseEnter={
                     i === 0
                       ? handleFirstLinkHover
+                      : i === 1
+                      ? handleSecondLinkHover
                       : () => {
                           setIsFirstLinkHovered(false);
+                          setIsSecondLinkHovered(false);
                         }
                   }
                 >
@@ -120,14 +150,42 @@ const Navbar = () => {
                     <li key={i} className=" list-none">
                       <Link
                         href={subM.path}
-                        target={
-                          i === 5 || i === 6 || i === 7 ? "_blank" : "_parent"
-                        }
-                        rel="noreferer"
                         onMouseEnter={() => setActiveSubMenu(i)}
                         onMouseLeave={() => setActiveSubMenu(-1)}
                         className={`py-4 px-5 border-t border-b border-dashed border-transparent hover:border-[#f5a238] transition-all duration-700 ease-in-out cursor-pointer block ${
                           activeSubMenu === i || pathName === subM.path
+                            ? "text-[#f5a238]"
+                            : "text-white"
+                        }`}
+                      >
+                        {subM.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                {/* second sub menu */}
+                <ul
+                  onMouseLeave={
+                    i === 1 ? handleSecondLinkMouseLeave : undefined
+                  }
+                  className={`top-[115%] left-0 transition-all duration-700 ease-in-out rounded-[5px] min-w-[230px] py-4 z-50 -mt-5 ${
+                    isSecondLinkHovered && i === 1
+                      ? "w-full opacity-100 absolute bg-[#0d0d0f] animate-fade-in"
+                      : "opacity-0 hidden"
+                  }`}
+                >
+                  {link.secondSubMenu?.map((subM, i) => (
+                    <li key={i} className=" list-none">
+                      <Link
+                        href={subM.path}
+                        target={
+                          i === 1 || i === 2 || i === 3 ? "_blank" : "_parent"
+                        }
+                        rel="noreferer"
+                        onMouseEnter={() => setActiveSecondSubMenu(i)}
+                        onMouseLeave={() => setActiveSecondSubMenu(-1)}
+                        className={`py-4 px-5 border-t border-b border-dashed border-transparent hover:border-[#f5a238] transition-all duration-700 ease-in-out cursor-pointer block ${
+                          activeSecondSubMenu === i || pathName === subM.path
                             ? "text-[#f5a238]"
                             : "text-white"
                         }`}

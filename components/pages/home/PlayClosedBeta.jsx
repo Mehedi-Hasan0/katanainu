@@ -8,14 +8,14 @@ const PlayClosedBeta = () => {
   return (
     <section className="main-container section-margin">
       <div className="flex flex-col gap-1 justify-center items-center">
-        <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] italic text-[#f9c309] font-medium uppercase font-jost">
+        <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px]  text-gradient font-semibold uppercase font-jost">
           Play Our
         </h4>
         <h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] text-white font-bold uppercase font-jost">
           closed beta now!
         </h4>
         <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-medium font-jost text-center">
-          Download Now If You Have An Access Key :
+          Download Now If You Have An Access Key:
         </h2>
 
         {/* download options */}
@@ -137,7 +137,7 @@ const PlayClosedBeta = () => {
             {/* access key with options */}
             <div className="flex flex-col gap-1 font-jost w-full">
               <p className="text-sm sm:text-base md:text-lg text-white/70 w-full lg:w-[80%]">
-                You can access closed beta without an access key if you:
+                You can access our closed beta without an access key if you:
               </p>
 
               {/* 1st key options */}
