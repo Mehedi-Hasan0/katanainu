@@ -95,8 +95,23 @@ const MobileNavbar = () => {
                               <Link
                                 href={subLink.path}
                                 className=" font-medium text-[15px] capitalize ml-6"
+                              >
+                                <SheetClose>{subLink.label}</SheetClose>
+                              </Link>
+                            </li>
+                          ))}
+                        {/* for second sub menu */}
+                        {link.secondSubMenu &&
+                          link.secondSubMenu.map((subLink, i) => (
+                            <li
+                              key={subLink.label}
+                              className=" pl-[25px] pr-[14px] py-3 border-t border-[#00000016] list-none"
+                            >
+                              <Link
+                                href={subLink.path}
+                                className=" font-medium text-[15px] capitalize ml-6"
                                 target={
-                                  i === 5 || i === 6 || i === 7 ? "_blank" : ""
+                                  i === 1 || i === 2 || i === 3 ? "_blank" : ""
                                 }
                                 rel="noreferer"
                               >
