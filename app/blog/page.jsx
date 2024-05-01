@@ -4,10 +4,9 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { PulseLoader } from "react-spinners";
 
-const Blog = () => {
+const Blog = ({ setHouseImageLink, setBlogData }) => {
   const [isImageUploading, setIsImgUploading] = useState(false);
   const [image, setImage] = useState(null);
-  const [houseImageLink, setHouseImageLink] = useState("");
   const [imageError, setImageError] = useState(null);
   const cloudName = process.env.NEXT_PUBLIC_CLOUD_NAME;
   const {
@@ -25,7 +24,7 @@ const Blog = () => {
     if (image !== null) {
       const imageFormData = new FormData();
       imageFormData.append("file", image);
-      imageFormData.append("upload_preset", "house-hunter");
+      imageFormData.append("upload_preset", "katanaInu");
       imageFormData.append("cloud_name", cloudName);
 
       try {
@@ -35,7 +34,12 @@ const Blog = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            setHouseImageLink(data.url);
+            setHouseImageLink(data.secure_url);
+            // inserting url into blogData
+            setBlogData((preValue) => ({
+              ...preValue,
+              imgUrl: data.secure_url,
+            }));
             console.log(data);
             if (data.error) {
               setImageError(data?.error?.message);
@@ -59,90 +63,79 @@ const Blog = () => {
     }
   }, [image]);
   return (
-    <>
-      <div>
-        <p>Link: {houseImageLink}</p>
-        <br />
-        <p>Error: {imageError}</p>
-      </div>
-
+    <div className=" flex flex-col justify-center items-center">
       {/* form data */}
       <form
         method="dialog"
         className="modal-box"
         onSubmit={handleSubmit(handleImageChange)}
       >
-        <div className=" my-5">
-          <div className="form-control w-full mt-3">
-            <label className="label">
-              <span className="label-text">Video/Picture</span>
+        <div className="form-control w-full">
+          <input
+            type="file"
+            id="image-input-2"
+            placeholder="Upload images..."
+            defaultValue={""}
+            className=" hidden"
+            accept="image/*"
+            {...register("houseImage", {
+              required: true,
+            })}
+            onChange={(e) => {
+              handleImageChange(e);
+            }}
+          />
+          <div className=" w-full md:min-w-[300px] p-3 border border-[#787878] rounded-lg text-[#9ca3af]">
+            <label
+              htmlFor="image-input-2"
+              className=" cursor-pointer block w-full"
+            >
+              {image ? (
+                <p className=" text-textColor">
+                  {isImageUploading ? (
+                    <div className=" flex justify-center py-1">
+                      <PulseLoader
+                        color="#5cd183"
+                        size={7}
+                        margin={4}
+                        speedMultiplier={0.6}
+                      />
+                    </div>
+                  ) : (
+                    <>{image?.name}</>
+                  )}
+                </p>
+              ) : (
+                "Upload images..."
+              )}
             </label>
-            <input
-              type="file"
-              id="image-input-2"
-              placeholder="image/video"
-              defaultValue={""}
-              className=" hidden"
-              {...register("houseImage", {
-                required: true,
-              })}
-              onChange={(e) => {
-                handleImageChange(e);
-              }}
-            />
-            <div className=" w-full p-3 border border-[#d2d4d7] rounded-lg text-[#9ca3af]">
-              <label
-                htmlFor="image-input-2"
-                className=" cursor-pointer block w-full"
-              >
-                {image ? (
-                  <p className=" text-textColor">
-                    {isImageUploading ? (
-                      <div className=" flex justify-center py-1">
-                        <PulseLoader
-                          color="#5cd183"
-                          size={7}
-                          margin={4}
-                          speedMultiplier={0.6}
-                        />
-                      </div>
-                    ) : (
-                      <>{image?.name}</>
-                    )}
-                  </p>
-                ) : (
-                  "Choose image"
-                )}
-              </label>
-            </div>
-            {errors.houseImage && (
-              <div
-                role="alert"
-                className=" flex flex-row items-center gap-2 mt-1"
-              >
-                <img
-                  src={errorIcon}
-                  alt="Last name is requires"
-                  className="w-5"
-                />
-                <p className="text-xs text-[#c13515]">This is required</p>
-              </div>
-            )}
-            {imageError === "Unsupported source URL: null" ? (
-              ""
-            ) : (
-              <div
-                role="alert"
-                className=" flex flex-row items-center gap-2 mt-1"
-              >
-                <p className="text-xs text-[#c13515]">{imageError}</p>
-              </div>
-            )}
           </div>
+          {errors.houseImage && (
+            <div
+              role="alert"
+              className=" flex flex-row items-center gap-2 mt-1"
+            >
+              <img
+                src={errorIcon}
+                alt="Last name is requires"
+                className="w-5"
+              />
+              <p className="text-xs text-[#c13515]">This is required</p>
+            </div>
+          )}
+          {imageError === "Unsupported source URL: null" ? (
+            ""
+          ) : (
+            <div
+              role="alert"
+              className=" flex flex-row items-center gap-2 mt-1"
+            >
+              <p className="text-xs text-[#c13515]">{imageError}</p>
+            </div>
+          )}
         </div>
-        <button type="submit">submit</button>
       </form>
-    </>
+    </div>
   );
 };
 
