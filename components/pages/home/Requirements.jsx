@@ -5,7 +5,8 @@ const Requirements = () => {
     <section className="main-container section-margin">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-jost font-semibold p-5 mb-8 sm:mb-10 md:mb-12 lg:mb-[50px] text-center">
-          System Requirements for Katana Inu game
+          System Requirements for{" "}
+          <span className="text-gradient">Katana Inu</span> game
         </h2>
 
         {/* data */}
@@ -13,6 +14,9 @@ const Requirements = () => {
           <ul className="ml-0">
             <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
               Minimum System Requirements
+            </span>
+            <span className="text-center text-xs md:text-sm 2xl:text-base font-medium text-white block mb-3">
+              Ensure your machine is ready to enter the world of Katana Inu.
             </span>
             {requiremnts.minimum.map((req, i) => (
               <li
@@ -29,6 +33,9 @@ const Requirements = () => {
           <ul className="ml-0">
             <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
               Suggested System Requirements
+            </span>
+            <span className="text-center text-xs md:text-sm 2xl:text-base font-medium text-white block mb-3">
+              Ensure your machine is ready to enter the world of Katana Inu.
             </span>
             {requiremnts.recomended.map((req, i) => (
               <li

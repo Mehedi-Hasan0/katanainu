@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const Blogs = () => {
   return (
-    <section className="relative mb-32 xl:mb-44 ">
+    <section className="relative mb-32 xl:mb-44 lg:pt-8">
       <div className="main-container text-white flex flex-col gap-16 lg:gap-24">
         {/* heading */}
         <div className="flex flex-col gap-3 md:gap-5 justify-center items-center">
           <h2 className="text-heading-2 uppercase font-jost font-semibold">
-            Katana inu news
+            <span className="text-gradient">Katana inu</span> news
           </h2>
           <p className="text-sm md:text-base lg:text-lg text-center mx-10 sm:mx-0">
             Stay tuned to the latest updates by reading our blog!

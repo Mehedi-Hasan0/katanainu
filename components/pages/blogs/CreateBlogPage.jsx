@@ -10,7 +10,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import Loader from "../../shared/Loader";
 import DOMPurify from "dompurify";
-import Blog from "@/app/blog/page";
+import Blog from "@/components/Blog";
 
 export default function CreateBlogPage() {
   const [blogData, setBlogData] = useState({
