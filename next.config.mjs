@@ -6,6 +6,12 @@ const nextConfig = {
         protocol: "https",
         hostname: "res.cloudinary.com",
         port: "",
+        pathname: "/da4hvpv9t/**",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
         pathname: "/dlhexsnxq/**",
       },
     ],

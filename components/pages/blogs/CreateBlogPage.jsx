@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Button } from "../../ui/button";
@@ -10,6 +10,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import Loader from "../../shared/Loader";
 import DOMPurify from "dompurify";
+import Blog from "@/components/Blog";
 
 export default function CreateBlogPage() {
   const [blogData, setBlogData] = useState({
@@ -22,6 +23,9 @@ export default function CreateBlogPage() {
   const [editorValue, setEditorValue] = useState("");
   const quillRef = useRef(null);
   const [loading, setLoading] = useState(false);
+
+  // IMG UPLOAD STATE //
+  const [houseImageLink, setHouseImageLink] = useState("");
 
   /////////
   const { register, handleSubmit, reset } = useForm();
@@ -182,24 +186,46 @@ export default function CreateBlogPage() {
       setLoading(false);
     }
   };
+
+  // UPLOAD IMAGE LOGIC FOR IMAGE URL //
+  useEffect(() => {
+    console.log(blogData, "blog data");
+  }, [blogData]);
+
   return (
     <div className="main-container section-margin text-white">
       <form
         onSubmit={handleSubmit(handleBlogUpload)}
         className="flex flex-col gap-4"
       >
-        <div className="flex flex-col gap-1">
-          <label htmlFor="imgUrl" className="text-sm sm:text-base ml-[2px]">
-            Image url
-          </label>
-          <input
-            type="text"
-            id="imgUrl"
-            placeholder="Image link..."
-            className=" bg-transparent text-white border border-[#787878] px-3 mr-2 h-14 placeholder:text-[#7a7676] placeholder:font-medium rounded-md"
-            {...register("imgUrl", { required: true })}
-            onChange={handleInputChange}
-          />
+        <div className="flex items-end gap-5">
+          <div className="flex flex-col gap-1 flex-1">
+            <label htmlFor="imgUrl" className="text-sm sm:text-base ml-[2px]">
+              Image url
+            </label>
+            <input
+              type="text"
+              id="imgUrl"
+              placeholder="Image link..."
+              value={
+                blogData?.imgUrl
+                  ? blogData?.imgUrl
+                  : houseImageLink
+                  ? houseImageLink
+                  : ""
+              }
+              className=" bg-transparent text-white border border-[#787878] px-3 mr-2 h-14 placeholder:text-[#7a7676] placeholder:font-medium rounded-md"
+              {...register("imgUrl", { required: true })}
+              onChange={handleInputChange}
+            />
+          </div>
+          {/* upload image */}
+          <div>
+            <Blog
+              setHouseImageLink={setHouseImageLink}
+              setBlogData={setBlogData}
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-1">
           <label htmlFor="title" className="text-sm sm:text-base ml-[2px]">

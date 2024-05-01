@@ -84,7 +84,7 @@ const Brand = () => {
                 variant="customAnimated"
                 className="min-w-[190px] text-[12px] font-bold uppercase"
               >
-                Sign up to telegram
+                JOIN OUR TELEGRAM
               </Button>
             </Link>
           </div>

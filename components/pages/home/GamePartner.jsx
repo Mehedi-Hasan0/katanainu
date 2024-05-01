@@ -11,7 +11,7 @@ const GamePartner = () => {
           Game partners
         </h2>
         <p className="text-xs sm:text-sm md:text-base text-white/40">
-          Katana Inu has partnered with the following companies
+          Katana Inu has partnered with the following companies:
         </p>
       </div>
 
