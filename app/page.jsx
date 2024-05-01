@@ -12,7 +12,7 @@ import WhereToBuyToken from "@/components/pages/home/WhereToBuyToken";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-page-screen">
       <Bannner />
       <div className="bg-[url('/assets/images/background.jpg')] bg-[0%_25%] bg-cover z-[1]  relative brand_container">
         <Brand />
