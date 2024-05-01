@@ -7,10 +7,16 @@ const Blogs = () => {
     <section className="relative mb-32 xl:mb-44 lg:pt-8">
       <div className="main-container text-white flex flex-col gap-16 lg:gap-24">
         {/* heading */}
-        <div className="flex flex-col gap-3 md:gap-5 justify-center items-center">
-          <h2 className="text-heading-2 uppercase font-jost font-semibold">
-            <span className="text-gradient">Katana inu</span> news
-          </h2>
+        <div className="flex flex-col gap-2 justify-center items-center">
+          <div className="flex flex-col justify-center items-center gap-1">
+            <h5 className="uppercase text-gradient font-bold tracking-[2px] text-lg md:text-xl lg:text-2xl font-jost">
+              Katana inu
+            </h5>
+            <h2 className="uppercase text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-white font-jost font-bold">
+              news
+            </h2>
+          </div>
+
           <p className="text-sm md:text-base lg:text-lg text-center mx-10 sm:mx-0">
             Stay tuned to the latest updates by reading our blog!
           </p>

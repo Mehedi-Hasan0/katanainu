@@ -3,20 +3,27 @@ import { requiremnts } from "@/data";
 const Requirements = () => {
   return (
     <section className="main-container section-margin">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-jost font-semibold p-5 mb-8 sm:mb-10 md:mb-12 lg:mb-[50px] text-center">
-          System Requirements for{" "}
-          <span className="text-gradient">Katana Inu</span> game
-        </h2>
+      <div className="flex flex-col gap-6 lg:gap-8 2xl:gap-10 justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center gap-1">
+            <h5 className="uppercase text-gradient font-bold tracking-[2px] text-lg md:text-xl lg:text-2xl font-jost">
+              Katana inu
+            </h5>
+            <h2 className="uppercase text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-white font-jost font-bold">
+              System Requirements for game
+            </h2>
+          </div>
+
+          <p className="text-sm md:text-base lg:text-lg text-center mx-10 sm:mx-0 text-gray-300">
+            Ensure your machine is ready to enter the world of Katana Inu.
+          </p>
+        </div>
 
         {/* data */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-14 lg:gap-24">
           <ul className="ml-0">
             <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
               Minimum System Requirements
-            </span>
-            <span className="text-center text-xs md:text-sm 2xl:text-base font-medium text-white block mb-3">
-              Ensure your machine is ready to enter the world of Katana Inu.
             </span>
             {requiremnts.minimum.map((req, i) => (
               <li
@@ -33,9 +40,6 @@ const Requirements = () => {
           <ul className="ml-0">
             <span className="text-center text-base md:text-lg 2xl:text-xl font-medium text-white block mb-3">
               Suggested System Requirements
-            </span>
-            <span className="text-center text-xs md:text-sm 2xl:text-base font-medium text-white block mb-3">
-              Ensure your machine is ready to enter the world of Katana Inu.
             </span>
             {requiremnts.recomended.map((req, i) => (
               <li
