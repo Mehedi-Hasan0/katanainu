@@ -16,7 +16,7 @@ const Bannner = () => {
         poster="/assets/images/thumbnail2.png"
         width={"100%"}
         height={"100%"}
-        className="w-full h-svh md:h-screen object-cover"
+        className="w-full h-svh md:h-screen 2xl:h-[868px] object-cover"
       />
       {/* overlay/backdrop/shadow */}
       <div className=" bg-gradient-to-b from-black/10 to-black/20 absolute w-full h-full z-10 top-0 left-0" />

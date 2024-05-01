@@ -329,6 +329,13 @@ button:hover .ql-fill,
 
 /* ////// REACT QUILL EDITOR CSS////// */
 
+@media (min-width: 1920px) {
+  .max-page-screen {
+    width: 1920px;
+    margin-inline: auto;
+  }
+}
+
 @media (1800px < width < 2400px) {
   .team-card .team-thumbnail img {
     top: -40px;
