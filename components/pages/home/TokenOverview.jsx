@@ -12,7 +12,7 @@ const TokenOverview = () => {
         <h5 className="uppercase text-gradient font-bold tracking-[2px] text-lg md:text-xl lg:text-2xl font-jost">
           $Kata
         </h5>
-        <h2 className="capitalize text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-white font-jost font-bold">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] text-white font-jost font-bold uppercase">
           Token overview
         </h2>
         <span className="mt-3">
