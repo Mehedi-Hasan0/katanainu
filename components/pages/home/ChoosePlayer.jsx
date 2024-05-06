@@ -63,13 +63,13 @@ const ChoosePlayer = () => {
           <h5 className="uppercase text-gradient tracking-[2px] text-base sm:text-2xl md:text-3xl font-jost font-bold">
             Ready to play?
           </h5>
-          <h2 className="text-lg sm:text-4xl md:text-6xl text-white font-jost font-bold uppercase">
+          <h2 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] text-white font-jost font-bold uppercase">
             Choose your warrior
           </h2>
         </div>
 
         {/* carousel */}
-        <div className="relative flex items-center">
+        <div className="relative flex items-center max-page-screen">
           {/* <span className="absolute left-0 flex justify-center items-center cursor-pointer chooseHero-prev z-[1]">
             <IoIosArrowBack color="#fff" size={42} />
           </span> */}
