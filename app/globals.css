@@ -334,6 +334,9 @@ button:hover .ql-fill,
     width: 1920px;
     margin-inline: auto;
   }
+  .max-video-height {
+    height: 1900px;
+  }
 }
 
 @media (1800px < width < 2400px) {

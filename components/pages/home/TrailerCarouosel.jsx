@@ -54,7 +54,7 @@ const TrailerCarouosel = () => {
 
   return (
     <>
-      <div className="flex items-stretch px-4 md:px-0">
+      <div className="flex items-stretch px-4 md:px-0 max-page-screen">
         <Swiper
           modules={[Navigation, EffectCoverflow]}
           effect={"coverflow"}
