@@ -68,10 +68,11 @@ const TeamMembers = () => {
         <div className="flex justify-center items-center text-center mb-5 sm:mb-8 px-3">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase text-white font-bold font-jost">
             <span className="text-[#f7d33f]">3</span> ADDITIONAL TEAM MEMBERS IN
-            MARKETING DEPARTMENT <span className="text-[#f7d33f]">4</span> TEAM
-            MEMBERS IN PARTNERSHIPS AND BUSINESS DEVELOPMENT{" "}
+            MARKETING DEPARTMENT <br />{" "}
+            <span className="text-[#f7d33f]">4</span> TEAM MEMBERS IN
+            PARTNERSHIPS AND BUSINESS DEVELOPMENT <br />
             <span className="text-[#f7d33f]">25</span> ARTISTS, GAME DESIGNERS &
-            GAME DEVELOPERS <span className="text-[#f7d33f]">2</span> WEB
+            GAME DEVELOPERS <br /> <span className="text-[#f7d33f]">2</span> WEB
             DEVELOPERS
           </h2>
         </div>

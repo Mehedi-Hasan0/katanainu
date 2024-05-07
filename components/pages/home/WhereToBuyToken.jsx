@@ -29,7 +29,7 @@ const WhereToBuyToken = () => {
     <section className="main-container section-margin">
       <div className="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6 md:mb-8">
         <h3 className="uppercase text-gradient font-bold tracking-[2px] text-xl sm:text-2xl md:text-3xl font-jost text-center">
-          Where Can I Buy $KATA Token?
+          Where Can I Buy $KATA Tokens?
         </h3>
         <p className="text-xs sm:text-sm md:text-base text-[#d3d3d3] font-medium text-center max-w-[960px]">
           Pancake Swap and Uniswap are the easiest outlets for purchasing the

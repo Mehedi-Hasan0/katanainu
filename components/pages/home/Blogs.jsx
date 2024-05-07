@@ -41,9 +41,6 @@ const Blogs = () => {
 
               {/* heading & description */}
               <div className="flex flex-col items-center">
-                <span className="text-sm md:text-base lg:text-lg text-[#ffd894] uppercase font-oswald opacity-95 font-light tracking-[5px] pt-6">
-                  Features
-                </span>
                 <h2 className="mt-2 mb-4 font-jost text-xl lg:text-2xl font-semibold text-center px-2 hover:text-[#f5a238] transition duration-500 ease-in-out">
                   <Link href={"#"}>{blog.heading}</Link>
                 </h2>
