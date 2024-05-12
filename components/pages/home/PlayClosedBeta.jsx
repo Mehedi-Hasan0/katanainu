@@ -40,7 +40,7 @@ const PlayClosedBeta = () => {
 
         {/* pvp */}
         {/* devider */}
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block">
           <svg
             width="620"
             height="1"
@@ -69,7 +69,7 @@ const PlayClosedBeta = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
         <div className="flex flex-row gap-3 my-4">
           <span className="rounded-[18px] border border-[#f5a238] py-2 px-4 font-bold font-jost text-[#f9c306] text-xl md:text-2xl italic">
             1vs1
@@ -78,7 +78,7 @@ const PlayClosedBeta = () => {
             3vs3
           </span>
         </div>
-        <div className="hidden sm:block">
+        {/* <div className="hidden sm:block">
           <svg
             width="620"
             height="1"
@@ -107,7 +107,7 @@ const PlayClosedBeta = () => {
               </linearGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
 
         {/* access key and other data */}
         <div className="flex flex-col md:flex-row gap-5 items-center mt-4">
@@ -219,7 +219,8 @@ const PlayClosedBeta = () => {
 
               <div className="absolute top-[35%] left-[1%] h-[405px] w-[99%]">
                 <video
-                  src="http://res.cloudinary.com/dlhexsnxq/video/upload/v1709961388/bannerbg_xgkahv.mp4"
+                  // src="http://res.cloudinary.com/dlhexsnxq/video/upload/v1709961388/bannerbg_xgkahv.mp4"
+                  src="https://res.cloudinary.com/da4hvpv9t/video/upload/v1715496963/cvxfbncqidb1l461cjng.mp4"
                   autoPlay
                   muted
                   loop
