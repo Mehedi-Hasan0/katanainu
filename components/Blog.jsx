@@ -9,6 +9,7 @@ const Blog = ({ setHouseImageLink, setBlogData }) => {
   const [image, setImage] = useState(null);
   const [imageError, setImageError] = useState(null);
   const cloudName = process.env.NEXT_PUBLIC_CLOUD_NAME;
+  // const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
   const {
     register,
     handleSubmit,
@@ -28,7 +29,7 @@ const Blog = ({ setHouseImageLink, setBlogData }) => {
       imageFormData.append("cloud_name", cloudName);
 
       try {
-        fetch(`https://api.cloudinary.com/v1_1/${cloudName}/image/upload`, {
+        fetch(`https://api.cloudinary.com/v1_1/${cloudName}/video/upload`, {
           method: "POST",
           body: imageFormData,
         })
@@ -77,7 +78,7 @@ const Blog = ({ setHouseImageLink, setBlogData }) => {
             placeholder="Upload images..."
             defaultValue={""}
             className=" hidden"
-            accept="image/*"
+            // accept="image/*"
             {...register("houseImage", {
               required: true,
             })}
